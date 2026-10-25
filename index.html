@@ -1,0 +1,934 @@
+<!doctype html>
+<html lang="el">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Αφιερώσεις στον Αριστείδη Κοντογεώργη">
+<meta property="og:description" content="Τα κείμενα, οι φωτογραφίες και τα σχόλια που γράφτηκαν για τον Τήνιο φωτογράφο και καθηγητή Αριστείδη Κοντογεώργη (1960–2026).">
+<meta property="og:image" content="https://kontogar.github.io/aristeidis-kontogeorgis/photos/og-portrait.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:url" content="https://kontogar.github.io/aristeidis-kontogeorgis/">
+<meta property="og:locale" content="el_GR">
+<meta name="twitter:card" content="summary_large_image">
+<title>Αφιερώσεις στον Αριστείδη Κοντογεώργη</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Literata:ital,opsz,wght@0,7..72,400;0,7..72,500;0,7..72,600;1,7..72,400&family=Noto+Sans:wght@400;500;600&display=swap">
+<style>
+  /* Layout: one quiet reading column, like a printed memorial booklet; each post is a plate with its photographs and its comments gathered beneath it. */
+  :root {
+    --bg: #f5f6f7;
+    --paper: #fdfdfc;
+    --fg: #22272c;
+    --muted: #5d666e;
+    --rule: #d6dbdf;
+    --accent: #2b5f78;
+    --accent-soft: #e4edf2;
+    --display: "Cormorant Garamond", "Times New Roman", Georgia, serif;
+    --body: "Literata", Georgia, "Times New Roman", serif;
+    --ui: "Noto Sans", -apple-system, "Segoe UI", Arial, sans-serif;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #14181c; --paper: #1b2025; --fg: #e6e8ea; --muted: #9aa4ad;
+      --rule: #2f373e; --accent: #8fbdd4; --accent-soft: #223038; color-scheme: dark;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #14181c; --paper: #1b2025; --fg: #e6e8ea; --muted: #9aa4ad;
+    --rule: #2f373e; --accent: #8fbdd4; --accent-soft: #223038; color-scheme: dark;
+  }
+
+  body {
+    background: var(--bg); color: var(--fg);
+    font-family: var(--body); font-size: 17px; line-height: 1.6;
+    padding-block: 0 64px;
+    padding-left: max(16px, env(safe-area-inset-left, 0px));
+    padding-right: max(16px, env(safe-area-inset-right, 0px));
+  }
+  .wrap { max-width: 44rem; margin: 0 auto; }
+
+  header.hero { padding-block: 56px 32px; border-bottom: 1px solid var(--rule); text-align: center; }
+  .eyebrow { font-family: var(--ui); font-size: 12px; letter-spacing: .14em; text-transform: uppercase; color: var(--muted); margin: 0 0 16px; }
+  h1 { font-family: var(--display); font-weight: 500; font-size: clamp(2.3rem, 7vw, 3.6rem); line-height: 1.05; margin: 0 0 12px; text-wrap: balance; }
+  .dates { font-family: var(--display); font-size: 1.35rem; font-style: italic; color: var(--muted); margin: 0 0 24px; }
+  .lede { margin: 0 auto; max-width: 36rem; text-align: left; color: var(--fg); }
+  .lede p { margin: 0 0 12px; }
+  .hero figure.photo { max-width: 30rem; margin: 0 auto 28px; }
+  .hero figure.photo img { width: auto; max-width: 100%; max-height: 440px; margin: 0 auto; }
+
+  nav.toc { padding-block: 28px; border-bottom: 1px solid var(--rule); }
+  nav.toc h2 { font-family: var(--ui); font-size: 12px; letter-spacing: .14em; text-transform: uppercase; color: var(--muted); margin: 0 0 12px; font-weight: 600; }
+  nav.toc ol { margin: 0; padding: 0 0 0 1.4em; columns: 2; column-gap: 32px; font-family: var(--ui); font-size: 14.5px; line-height: 1.5; }
+  nav.toc li { break-inside: avoid; margin: 0 0 6px; }
+  nav.toc a { color: var(--accent); text-decoration: none; }
+  nav.toc a:hover, nav.toc a:focus-visible { text-decoration: underline; }
+  @media (max-width: 520px) { nav.toc ol { columns: 1; } }
+
+  article.post { padding-block: 40px; border-bottom: 1px solid var(--rule); }
+  .meta { display: flex; flex-wrap: wrap; gap: 6px 14px; align-items: baseline; font-family: var(--ui); font-size: 13.5px; color: var(--muted); margin: 0 0 10px; }
+  .meta .who { color: var(--fg); font-weight: 600; font-size: 15px; }
+  .meta .via { font-style: normal; }
+  h2.title { font-family: var(--display); font-weight: 500; font-size: 1.9rem; line-height: 1.15; margin: 0 0 18px; text-wrap: balance; }
+  blockquote { margin: 0; padding: 0 0 0 18px; border-left: 2px solid var(--accent); }
+  blockquote p { margin: 0 0 12px; }
+  blockquote p:last-child { margin-bottom: 0; }
+  blockquote.en { font-style: italic; }
+  .note { font-family: var(--ui); font-size: 14px; color: var(--muted); margin: 14px 0 0; }
+  .note a { color: var(--accent); }
+  .count { font-family: var(--ui); font-size: 13px; color: var(--muted); margin: 14px 0 0; font-variant-numeric: tabular-nums; }
+
+  /* Photographs: shown at column width, or in a small grid when a post carries several. */
+  figure.photo { margin: 0 0 20px; }
+  figure.photo img { display: block; width: 100%; height: auto; border-radius: 4px; background: var(--paper); border: 1px solid var(--rule); }
+  figure.photo figcaption { font-family: var(--ui); font-size: 13px; color: var(--muted); margin-top: 6px; line-height: 1.45; }
+  figure.photo a { display: block; }
+  .photos { display: grid; gap: 12px; margin: 18px 0 20px; align-items: start; }
+  .photos figure.photo { margin: 0; }
+  .photos.two { grid-template-columns: 1fr 1fr; }
+  .photos.grid { grid-template-columns: repeat(auto-fill, minmax(190px, 1fr)); }
+  .photos.grid img { aspect-ratio: 4 / 3; object-fit: cover; }
+  blockquote + .photos, blockquote + figure.photo { margin-top: 20px; }
+  @media (max-width: 520px) { .photos.two { grid-template-columns: 1fr; } .photos.grid { grid-template-columns: 1fr 1fr; } }
+
+  details.comments { margin-top: 20px; background: var(--paper); border: 1px solid var(--rule); border-radius: 6px; }
+  details.comments summary { cursor: pointer; padding: 12px 16px; font-family: var(--ui); font-size: 14px; font-weight: 600; color: var(--accent); list-style: none; display: flex; align-items: center; gap: 8px; }
+  details.comments summary::-webkit-details-marker { display: none; }
+  details.comments summary::before { content: "▸"; font-size: 12px; transition: transform .15s; }
+  details.comments[open] summary::before { transform: rotate(90deg); }
+  details.comments summary:focus-visible { outline: 2px solid var(--accent); outline-offset: -2px; border-radius: 6px; }
+  details.comments ul { margin: 0; padding: 4px 16px 16px; list-style: none; display: flex; flex-direction: column; gap: 10px; }
+  details.comments li { font-size: 15.5px; line-height: 1.5; min-width: 0; }
+  details.comments li b { font-family: var(--ui); font-size: 13.5px; font-weight: 600; color: var(--fg); display: block; margin-bottom: 1px; }
+  details.comments li i { color: var(--muted); }
+  .reply { margin-left: 18px; padding-left: 12px; border-left: 1px solid var(--rule); }
+
+  section.closing { padding-block: 48px 0; text-align: center; }
+  section.closing figure.photo { margin: 0 auto; max-width: 34rem; }
+  section.closing p.farewell { font-family: var(--display); font-size: 1.6rem; font-style: italic; margin: 24px 0 0; }
+
+  footer.src { padding-block: 32px 0; font-family: var(--ui); font-size: 13.5px; color: var(--muted); border-top: 1px solid var(--rule); margin-top: 40px; }
+  footer.src p { margin: 0 0 8px; }
+  footer.src a { color: var(--accent); }
+  @media (prefers-reduced-motion: reduce) { details.comments summary::before { transition: none; } }
+</style>
+
+</head>
+<body>
+<div class="wrap">
+  <header class="hero">
+    <p class="eyebrow">Εις μνήμην</p>
+    <h1>Αριστείδης Κοντογεώργης</h1>
+    <p class="dates">Φωτογράφος και καθηγητής · Τήνος 1960 – 20 Οκτωβρίου 2026</p>
+    <figure class="photo"><img src="photos/tl_image-14.jpg" alt="Ο Αριστείδης Κοντογεώργης, χαμογελαστός" loading="eager"><figcaption>Χαμογελαστός, όπως τον θυμόμαστε. Από το άρθρο του Tinos LIVE TV, πηγή: δημόσια ανάρτηση της οικογένειας.</figcaption></figure>
+    <div class="lede">
+      <p>Καθηγητής στο Τμήμα Φωτογραφίας του Πανεπιστημίου Δυτικής Αττικής από το 1989, πρόεδρος της Ελληνικής Φωτογραφικής Εταιρείας και της Διεθνούς Ομοσπονδίας Φωτογραφικών Φεστιβάλ, με 30 ατομικές εκθέσεις και 24 βιβλία. Με το υπέρυθρο φιλμ του έδειξε την Τήνο και τους περιστεριώνες της όπως δεν τους είχαμε ξαναδεί, και με τις αεροφωτογραφίες του τη σύστησε «από ψηλά» στους επισκέπτες της.</p>
+      <p>Έφυγε από τη ζωή το πρωί της Τρίτης 20 Οκτωβρίου 2026, σε ηλικία 66 ετών. Η εξόδιος ακολουθία τελέστηκε το Σάββατο 24 Οκτωβρίου 2026, στη 1 το μεσημέρι, στον Ιερό Ναό Αγίου Ελευθερίου στη Χώρα της Τήνου.</p>
+      <p>Εδώ έχουν συγκεντρωθεί τα κείμενα που γράφτηκαν γι’ αυτόν στο Facebook από τις 20 έως τις 24 Οκτωβρίου 2026, όπως τα κοινοποίησαν κυρίως οι κόρες του, η Κατερίνα και η Ευαγγελία, μαζί με τις φωτογραφίες που συνόδευαν κάθε ανάρτηση και τα σχόλια που αφέθηκαν από κάτω.</p>
+    </div>
+  </header>
+
+  <nav class="toc" aria-label="Περιεχόμενα">
+    <h2>Αναρτήσεις</h2>
+    <ol>
+      <li><a href="#tinoslive">Tinos LIVE TV · 20.10</a></li>
+      <li><a href="#tinostoday">Tinos Today · 20.10</a></li>
+      <li><a href="#kafetzis">Ανδρέας Καφετζής · 20.10</a></li>
+      <li><a href="#rodamitis">Θέμης Ροδαμίτης · 20.10</a></li>
+      <li><a href="#koulouras1">Μπάμπης Κουλούρας · 20.10</a></li>
+      <li><a href="#tawfik">Tawfik Youssef · 20.10</a></li>
+      <li><a href="#pipinis">Χρήστος Πιπίνης · 20.10</a></li>
+      <li><a href="#adelfotita">Αδελφότητα των εν Αθήναις Τηνίων · 21.10</a></li>
+      <li><a href="#evangelia">Ευαγγελία Κοντογεώργη · 21.10</a></li>
+      <li><a href="#tinoslive-video">Tinos LIVE TV, βίντεο «Η Τήνος από ψηλά» · 21.10</a></li>
+      <li><a href="#funeral">Οι αγγελίες της εξοδίου ακολουθίας · 21–22.10</a></li>
+      <li><a href="#armaos">Παντελής Αρμάος · 22.10</a></li>
+      <li><a href="#itip">Ίδρυμα Τηνιακού Πολιτισμού · 22.10</a></li>
+      <li><a href="#katerina">Κατερίνα Κοντογεώργη · 23.10</a></li>
+      <li><a href="#syllogos">Σύλλογος Καλλιτεχνών Εικαστικών Τήνου · 23.10</a></li>
+      <li><a href="#emporikos">Εμποροεπαγγελματικός Σύλλογος Τήνου · 23.10</a></li>
+      <li><a href="#krontiras">Παναγιώτης Κροντηράς, Δήμαρχος Τήνου · 23.10</a></li>
+      <li><a href="#koulouras2">Μπάμπης Κουλούρας · 24.10</a></li>
+      <li><a href="#tinoslive2">Tinos LIVE TV · 24.10</a></li>
+      <li><a href="#deligianni">Νατάσα Δεληγιάννη Άσπρου · 24.10</a></li>
+      <li><a href="#shares-evangelia">Συλλυπητήρια προς την Ευαγγελία</a></li>
+      <li><a href="#shares-katerina">Συλλυπητήρια προς την Κατερίνα</a></li>
+    </ol>
+  </nav>
+
+  <article class="post" id="tinoslive">
+    <p class="meta"><span class="who">Tinos LIVE TV</span><span>20 Οκτωβρίου 2026</span><span class="via">κοινοποίηση από Κατερίνα και Ευαγγελία</span></p>
+    <h2 class="title">«Βαριά απώλεια για την Τήνο μας»</h2>
+    <figure class="photo"><img src="photos/tinoslive1.jpg" alt="Η εικόνα της ανάρτησης του Tinos LIVE TV" loading="lazy"></figure>
+    <blockquote>
+      <p>Έφυγε σήμερα το πρωί από τη ζωή, σε ηλικία 66 ετών, ο Τήνιος φωτογράφος και καθηγητής Αριστείδης Κοντογεώργης. Συγκλονισμένοι όλοι εδώ στο Tinos LIVE TV. Βαριά απώλεια για την Τήνο μας.</p>
+      <p>Καθηγητής στο Τμήμα Φωτογραφίας του Πανεπιστημίου Δυτικής Αττικής από το 1989, πρόεδρος της Ελληνικής Φωτογραφικής Εταιρείας και της Διεθνούς Ομοσπονδίας Φωτογραφικών Φεστιβάλ, με 30 ατομικές εκθέσεις και 24 βιβλία. Με το υπέρυθρο φιλμ του έδειξε την Τήνο και τους περιστεριώνες της όπως δεν τους είχαμε ξαναδεί, και με τον οδηγό του, γεμάτο αεροφωτογραφίες, τη σύστησε στους επισκέπτες της.</p>
+      <p>Θερμά συλλυπητήρια στην οικογένειά του. Ας είναι ελαφρύ το χώμα που θα τον σκεπάσει. Καλό ταξίδι, Αριστείδη.</p>
+    </blockquote>
+    <div class="photos grid">
+      <figure class="photo"><img src="photos/tl_tinos-ypertheri-kontogeorgis.jpg" alt="«Τήνος», από τη σειρά «Υπέρυθρη φωτογραφία»" loading="lazy"><figcaption>«Τήνος», από τη σειρά «Υπέρυθρη φωτογραφία»· έργο του στη συλλογή του Μουσείου Σύγχρονης Τέχνης Φλώρινας.</figcaption></figure>
+      <figure class="photo"><img src="photos/tl_peristerionas-tinos-kontogeorgis.jpg" alt="Περιστεριώνας στην Τήνο, φωτογραφία του Αριστείδη Κοντογεώργη" loading="lazy"><figcaption>Περιστεριώνας στην Τήνο.</figcaption></figure>
+      <figure class="photo"><img src="photos/tl_tinos-peristerionas-sepia-kontogeorgis.jpg" alt="Περιστεριώνας της Τήνου στο φως του υπέρυθρου φιλμ" loading="lazy"><figcaption>Περιστεριώνας της Τήνου στο φως του υπέρυθρου φιλμ.</figcaption></figure>
+      <figure class="photo"><img src="photos/tl_eidolio-kontogeorgis.jpg" alt="«Ειδώλιο ΙΙ», γλυπτό του Αριστείδη Κοντογεώργη" loading="lazy"><figcaption>«Ειδώλιο ΙΙ»· ήταν και γλύπτης. Μουσείο Σύγχρονης Τέχνης Φλώρινας.</figcaption></figure>
+      <figure class="photo"><img src="photos/tl_image-13.jpg" alt="Ο Αριστείδης στο σούρουπο, δίπλα στη θάλασσα" loading="lazy"><figcaption>Στο σούρουπο, δίπλα στη θάλασσα.</figcaption></figure>
+      <figure class="photo"><img src="photos/tl_image-15.jpg" alt="Ο Αριστείδης με τους δικούς του, με φόντο τις πεζούλες της Τήνου" loading="lazy"><figcaption>Με τους δικούς του, με φόντο τις πεζούλες της Τήνου.</figcaption></figure>
+      <figure class="photo"><img src="photos/tl_image-14.jpg" alt="Ο Αριστείδης χαμογελαστός" loading="lazy"><figcaption>Χαμογελαστός, όπως τον θυμόμαστε.</figcaption></figure>
+      <figure class="photo"><img src="photos/tl_aristeidis-kontogeorgis-portreto.jpg" alt="Ο Αριστείδης Κοντογεώργης με το λεύκωμά του για την Τήνο" loading="lazy"><figcaption>Με το λεύκωμά του για την Τήνο. Πηγή: imaginistes.</figcaption></figure>
+    </div>
+    <p class="note">Άρθρο: «Έφυγε ο Αριστείδης Κοντογεώργης: ο Τήνιος φωτογράφος που έδειξε το νησί μας αλλιώς, μέσα από το υπέρυθρο φιλμ και “εξ ουρανού”» (tinoslive.tv, 20.10.2026). Οι φωτογραφίες είναι από το άρθρο· πηγές τους, κατά το Tinos LIVE TV: imaginistes, Μουσείο Σύγχρονης Τέχνης Φλώρινας και δημόσια ανάρτηση της οικογένειας.</p>
+    <p class="count">190 αντιδράσεις · 22 σχόλια · 16 κοινοποιήσεις</p>
+    <details class="comments">
+      <summary>Σχόλια (19)</summary>
+      <ul>
+        <li><b>Faethon Gryparis</b>Πολλά συλλυπητήρια στην οικογένεια! Μου είναι δύσκολο να το πιστέψω. Πολύ αγαπημένος φίλος, υπέροχο άτομο, καλλιτέχνης της φωτογραφίας!</li>
+        <li><b>Αλέκος Φλωράκης</b>Συγκλονισμένος... Ο φίλτατος Αριστείδης.... Ο Θεός να αναπαύσει την ψυχή του. Θερμά συλλυπητήρια στην οικογένειά του.</li>
+        <li><b>Babis Koulouras</b>Στη μνήμη του αγαπημένου μου φίλου μια από τις πολλές αναμνήσεις μου... Θα μείνει πάντα στις καρδιές όσων τον γνώρισαν από κοντά και πήραν κάτι από τη βαθιά του καρδιά... (με το βίντεο «Η Τήνος από ψηλά»)</li>
+        <li><b>Αγγελική Γυφτογιάννη</b>Πολύ κρίμα, τόσο νέος. Θερμά συλλυπητήρια στους οικείους του, ένας αξιόλογος άνθρωπος. Ορφάνεψε το νησί μας. ΚΑΛΟ ΤΟΥ ΤΑΞΙΔΙ ΣΤΗΝ ΑΙΩΝΙΟΤΗΤΑ!</li>
+        <li><b>Μαρία Ψάρρου</b>Καλό ταξίδι Αριστείδη... έφυγες αφήνοντας φτωχότερη την Τήνο... Συλλυπητήρια σε όλη την οικογένεια.</li>
+        <li><b>Katerina Chatziloui Kagiorgi</b>Θερμά συλλυπητήρια....</li>
+        <li><b>Josephine Amer</b>Ειλικρινή συλλυπητήρια στους οικείους του!</li>
+        <li><b>Lia Lazarou</b>Θερμά συλλυπητήρια σε όλη την οικογένεια! Να είστε πάντα καλά να τον θυμάστε! Καλό παράδεισο!</li>
+        <li><b>Ευάγγελος Παπαγεωργίου</b>Καλό σου ταξίδι αγαπημένε μου φίλε Αριστείδη... συλλυπητήρια και κουράγιο στην οικογένεια...</li>
+        <li><b>Evaggelia Metaxa Kiousi</b>Καλό ταξίδι στο Φως Αριστείδη, συλλυπητήρια στην οικογένειά σου.</li>
+        <li><b>Stelios Bibiris</b>Ένας εξαίρετος γείτονας στον Άγ. Φωκά έφυγε τόσο νωρίς, συλλυπητήρια στην οικογένειά του.</li>
+        <li><b>Matthaios Andriotis</b>Θερμά συλλυπητήρια στην οικογένειά του.</li>
+        <li><b>Antonis Mitsis</b>Συλλυπητήρια στην οικογένειά του και ας είναι πάντα στη μνήμη μας η παρουσία του και το υπέροχο έργο του.</li>
+        <li><b>Markos Rigos</b>Τα θερμά μας συλλυπητήρια σε όλη την οικογένεια! Καλό παράδεισο να έχει!</li>
+        <li><b>Ματθαίος-Μαρία Καρδαμίτση</b>Συλλυπητήρια στην οικογένειά του!</li>
+        <li><b>Marinos Palamaris</b>Τα συλλυπητήριά μου σε όλη την οικογένεια και τους οικείους του, κρίμα!</li>
+        <li><b>Maria Piliotopoulou</b>Όμορφο δρόμο για την αιωνιότητα, καλέ μου συμμαθητή Αριστείδη.</li>
+        <li><b>Despoina Kannidou</b>Θερμά συλλυπητήρια στους οικείους του!</li>
+        <li><b>Zetta Santa</b>Καλό ταξίδι Αριστείδη!</li>
+      </ul>
+    </details>
+  </article>
+
+  <article class="post" id="tinostoday">
+    <p class="meta"><span class="who">Tinos Today</span><span>20 Οκτωβρίου 2026</span><span class="via">κοινοποίηση από Ευαγγελία και από Tawfik Youssef στο προφίλ της Κατερίνας</span></p>
+    <h2 class="title">«Σε ευχαριστούμε για όλα»</h2>
+    <figure class="photo"><img src="photos/tinostoday1.png" alt="Η εικόνα της ανάρτησης του Tinos Today" loading="lazy"></figure>
+    <blockquote>
+      <p>Για εμάς στο Tinos Today, ο Αριστείδης Κοντογεώργης ήταν ένας άνθρωπος που στάθηκε δίπλα μας από τα πρώτα βήματα της προσπάθειάς μας, αλλά και σε όλη τη μετέπειτα πορεία μας.</p>
+      <p>Τον ευχαριστούμε θερμά για όσα μας δίδαξε, για τη γνώση και την εμπειρία που μοιράστηκε μαζί μας, αλλά και για τις φωτογραφίες που μας εμπιστεύτηκε και διέθεσε στο Tinos Today.</p>
+      <p>Η προσφορά του και η στήριξή του αποτελούν ένα κομμάτι της δικής μας διαδρομής. Θα τον θυμόμαστε με εκτίμηση και ευγνωμοσύνη.</p>
+      <p>Καλό ταξίδι, Αριστείδη. Σε ευχαριστούμε για όλα.</p>
+    </blockquote>
+    <p class="note">Άρθρο: «Έφυγε από τη ζωή ο Αριστείδης Κοντογεώργης» (tinostoday.gr, 20.10.2026).</p>
+    <p class="count">400 αντιδράσεις · 81 σχόλια · 11 κοινοποιήσεις</p>
+    <details class="comments">
+      <summary>Σχόλια (81)</summary>
+      <ul>
+        <li><b>Viktoras Apiliotis</b>Το φωτογραφικό έργο του για την Τήνο σπουδαία πολιτισμική παρακαταθήκη. Θερμά συλλυπητήρια στην οικογένειά του.</li>
+        <li><b>Γεώργιος Δεληγιάννης</b>Βαγγελίτσα δεν μπορώ, δεν βρίσκω λόγια να γράψω γι’ αυτό το θλιβερό θανατηφόρο και του δεύτερου Παιδιού Σου, Αριστείδη! Με την Αλεξ εκφράζουμε τα εγκάρδια Συλλυπητήριά μας και ευχόμαστε ο Θεός να σου δίνει Δύναμη, Κουράγιο και Παρηγοριά! Ας είναι Αιώνια Αναπαυμένος στον Ουράνιο Παράδεισό Του.</li>
+        <li><b>Αλέξανδρος Χατζίρης</b>Θερμά συλλυπητήρια.</li>
+        <li><b>Stratis Vidalis</b>Θερμά συλλυπητήρια στην οικογένεια.</li>
+        <li><b>Manolis Sohos</b>Θερμά συλλυπητήρια στην οικογένειά του. Είμαι υπερήφανος που συνεργαστήκαμε στο σημαντικό εκδοτικό έργο Η ΤΗΝΟΣ ΤΟΥ ΧΘΕΣ ΚΑΙ ΤΟΥ ΣΗΜΕΡΑ!</li>
+        <li><b>Konstantinos Vidalis</b>ΘΕΡΜΑ ΣΥΛΛΥΠΗΤΗΡΙΑ ΣΤΗΝ ΟΙΚΟΓΕΝΕΙΑ ΤΟΥ! ΣΥΓΚΛΟΝΙΣΜΕΝΟΣ ΑΠΟ ΤΗΝ ΑΠΩΛΕΙΑ ΤΟΥ ΚΑΛΟΥ ΜΟΥ ΦΙΛΟΥ. Η ΜΝΗΜΗ ΤΟΥ ΘΑ ΕΙΝΑΙ ΑΙΩΝΙΑ ΓΙΑ ΟΛΟ ΤΟ ΝΗΣΙ.</li>
+        <li><b>Αλέκος Φλωράκης</b>Συγκλονισμένος... Ο φίλτατος Αριστείδης.... Ο Θεός να αναπαύσει την ψυχή του. Θερμά συλλυπητήρια στην οικογένειά του.</li>
+        <li><b>Πέτρος Τριαντάφυλλος</b>Θερμά συλλυπητήρια στην οικογένειά του... Αιωνία του η μνήμη.</li>
+        <li><b>Francesco Straticò</b>Συλλυπητήρια (στα ιταλικά).</li>
+        <li><b>Nikos Xatzis</b>Τα ειλικρινή μου συλλυπητήρια στην οικογένεια του Αριστείδη. Είχα μια πολύ καλή φιλική σχέση και συνεργάστηκα μαζί του σε σημαντικές εκδόσεις μέσω της Αδελφότητος των Τηνίων εν Αθήναις, με εκδοτικά φωτογραφικά έργα (άλμπουμ) όπως Η ΤΗΝΟΣ ΤΟΥ ’50, ΟΙ ΠΕΡΙΣΤΕΡΙΩΝΕΣ κ.ά. Ο Αριστείδης προσέφερε πολλά μέσα από το καλλιτεχνικό και φωτογραφικό του έργο, προβάλλοντας την Τήνο μέσα από τα έργα του. Ας είναι το ταξίδι του ήρεμο στην αγκαλιά των αγγέλων και η μνήμη του να παραμείνει στην αιωνιότητα. Καλό ταξίδι Αριστείδη.</li>
+        <li><b>Manthos Santorineos</b>Με μεγάλη θλίψη διαβάζω τα νέα για τον Αριστείδη, άλλον ένα άξιο καλλιτέχνη της Τήνου ο οποίος με τα ενδιαφέροντα καλλιτεχνικά και λαογραφικά φωτογραφικά βιβλία του έχει καταγράψει την Τήνο που χάνεται. Όπως και οι φωτογραφίες των βιβλίων σου, θα μείνεις στη μνήμη μας Αριστείδη. Θερμά συλλυπητήρια στην οικογένειά του.</li>
+        <li><b>Marietta Louvari</b>Συλλυπητήρια στην οικογένεια και τους οικείους του. Τέτοιοι άνθρωποι δε φεύγουν, αφήνουν για πάντα το έργο τους.</li>
+        <li><b>Φραγκίσκα Σελέντη</b>Τα ίχνη της ζωής του δεν θα σβηστούν ποτέ! Είναι τόσο φωτεινά! Αιώνια η μνήμη του! Δύναμη στους οικείους του για τη μεγάλη απώλεια! Ευγνώμονες!</li>
+        <li><b>Ελευθερία Καμολίνου</b>Θερμά συλλυπητήρια.</li>
+        <li><b>Μίμης Πέργαλης</b>Δεν υπάρχουν λόγια. Θερμά συλλυπητήρια στην οικογένεια. Με την απώλεια του Αριστείδη η Τήνος έγινε φτωχότερη.</li>
+        <li><b>Ευάγγελος Τζεπαπαδάκης</b>Θερμά συλλυπητήρια.</li>
+        <li><b>Artemis Liapi</b>Θερμά συλλυπητήρια.</li>
+        <li><b>Konstantinos Kafandaris</b>Θερμά συλλυπητήρια στην οικογένειά του. Ένας τόσο δημιουργικός άνθρωπος!</li>
+        <li><b>Ιωσηφίνα Φόνσου</b>Θερμά συλλυπητήρια στην οικογένειά του. Καλό ταξίδι Αριστείδη, θα σε θυμάμαι πάντα.</li>
+        <li><b>Garifallia Plyta</b>Ειλικρινή συλλυπητήρια! Αιώνια να βρίσκεται στη μνήμη του Θεού!</li>
+        <li><b>Γιάννης Κανακάρης</b>Ειλικρινή συλλυπητήρια... Ο Χριστός μας να τον αναπαύει.</li>
+        <li><b>Antonis Delatollas</b>Τα συλλυπητήριά μου στην οικογένεια.</li>
+        <li><b>Eleni Glinou</b>Κρίμα, κρίμα! Καλό του κατευόδιο.</li>
+        <li><b>Θοδωρής Βελούδιος</b>Θερμά συλλυπητήρια, καλό παράδεισο.</li>
+        <li><b>Ζωή Νώε</b>Τα συλλυπητήριά μου... Ο Αριστείδης, καλός μου γείτονας! Καλό Παράδεισο, καλό ταξίδι, καλή ανάπαυση! Θερμά συλλυπητήρια στην οικογένειά του!</li>
+        <li><b>Παναγιώτης Μαλλιάρης</b>Ο πάντα καλοσυνάτος και χαμογελαστός ΑΡΙΣΤΕΙΔΗΣ έφυγε. Καλό σου ταξίδι και αιώνια η μνήμη σου.</li>
+        <li><b>Μάνθος Γαΐτης</b>Είναι μεγάλη η λύπη μας για τον Αριστείδη.</li>
+        <li><b>Γιώργος Βασιλειάδης</b>Θερμά συλλυπητήρια για τον θάνατο του αγαπημένου συμμαθητή μου.</li>
+        <li><b>Giannhs Vidalis</b>Καλό παράδεισο να έχει ο φίλος μου.</li>
+        <li><b>Σμαράγδα Μπόνη</b>Τα ειλικρινή μου συλλυπητήρια. Καλό του ταξίδι στο φως.</li>
+        <li><b>Ευάγγελος Παπαγεωργίου</b>Καλό ταξίδι φίλε Αριστείδη!</li>
+        <li><b>Βάνα Βάνα</b>Ο Θεός και η Παναγία να αναπαύσουν την ψυχούλα του. Καλό παράδεισο, συλλυπητήρια στους οικείους του.</li>
+        <li><b>Φραντζέσκα Σκουτάρη</b>Τα ειλικρινή μου συλλυπητήρια. Καλό Παράδεισο να έχει!</li>
+        <li><b>Νίκη Σαλταμάνικα</b>Θερμά συλλυπητήρια στην οικογένειά του!</li>
+        <li><b>Fransouaz Pappa</b>Καλό ταξίδι, αιώνια του η μνήμη, θερμά συλλυπητήρια.</li>
+        <li><b>Κωνσταντίνα Συλίκου</b>Πόσο λυπάμαι.... ειλικρινή συλλυπητήρια..... Καλό ταξίδι στο Φως........</li>
+        <li><b>Kostas Tzifakis</b>Τι κρίμα, αιώνια αυτού η μνήμη.</li>
+        <li><b>Victor Palamaris</b>Τα θερμά μου συλλυπητήρια σε όλη την οικογένεια...</li>
+        <li><b>Nikos Spiliopoulos</b>Συλλυπητήρια στην οικογένειά του.</li>
+        <li><b>Katerina Sarafi</b>Θερμά συλλυπητήρια!</li>
+        <li><b>Αγγελικούλα Σανταμούρη</b>Τα συλλυπητήριά μου, αιώνια του η μνήμη.</li>
+        <li><b>Μαρία Αρμάου</b>Θερμά συλλυπητήρια....</li>
+        <li><b>Anneza Foskolou</b>Συλλυπητήρια. Καλό παράδεισο να έχει!</li>
+        <li><b>Stratos Seaman</b>Θερμά συλλυπητήρια.</li>
+        <li><b>Nora Noraki Koumpia</b>Θερμά συλλυπητήρια.</li>
+        <li><b>Stelios Asimomitis</b>Απίστευτο, τι να πω. Θερμά συλλυπητήρια στην οικογένειά του.</li>
+        <li><b>Ρόζα Σάββαρη</b>Θερμά συλλυπητήρια!</li>
+        <li><b>Λευτέρης Βιδάλης</b>Θερμά συλλυπητήρια, καλό παράδεισο.</li>
+        <li><b>Ευαγγελία Μινάρδου-Αδάμου</b>Θερμά συλλυπητήρια στην οικογένειά του, αιωνία η μνήμη του!</li>
+        <li><b>Frantzeska Dasyra</b>Μόνο λύπη και στενοχώρια για έναν τόσο άξιο και δημιουργικό άνθρωπο που λάτρευε το νησί μας! Καλό ταξίδι και καλή ανάπαυση, το έργο του μεγάλο και αξέχαστος! Θερμά συλλυπητήρια στην οικογένειά του!</li>
+        <li><b>Katerina Samara Filippousi</b>Τα συλλυπητήριά μας.</li>
+        <li><b>Antoinette Diamataris</b>Καλό παράδεισο.</li>
+        <li><b>Eleni Minnen-Tiga</b>Θερμά συλλυπητήρια σε όλη την οικογένεια.</li>
+        <li><b>Michael Plakotakis</b>Ειλικρινή συλλυπητήρια σε όλη την οικογένεια.</li>
+        <li><b>Mariola Gaiti</b>Θερμά συλλυπητήρια στην οικογένειά του.</li>
+        <li><b>Maria Vidali</b>Θερμά συλλυπητήρια στην οικογένειά του.</li>
+        <li><b>Fragkiskos Alvertis</b>Θερμά συλλυπητήρια.</li>
+        <li><b>Aggeliki Giannitsi</b>Θερμά συλλυπητήρια στην οικογένειά του.</li>
+        <li><b>Anna Siotou</b>Θερμά συλλυπητήρια.</li>
+        <li><b>Μαργαρίτα Φόνσου</b>Συλλυπητήρια στην οικογένειά του.</li>
+        <li><b>Zozefina Foskolou</b>Θερμά συλλυπητήρια.</li>
+        <li><b>Markos Rigos</b>Τα θερμά μας συλλυπητήρια σε όλη την οικογένεια! Καλό παράδεισο να έχει!</li>
+        <li><b>Μαρία Βελαλοπούλου</b>Θερμά συλλυπητήρια στην οικογένειά του!! Καλό Παράδεισο!!</li>
+        <li><b>Marianna Desypri</b>Τα θερμά συλλυπητήρια σε όλη την οικογένεια.</li>
+        <li><b>Mixalis Suranis</b>Θερμά συλλυπητήρια στην οικογένεια.</li>
+        <li><b>Κατερίνα Κλαυδιανού</b>Θερμά συλλυπητήρια.</li>
+        <li><b>Αγγελική Γυφτογιάννη</b>Θερμά συλλυπητήρια στην οικογένειά του, καλό του ταξίδι στο ΦΩΣ. Λυπήθηκα πάρα πολύ!</li>
+        <li><b>Konstantina Gavrilou</b>Θερμά συλλυπητήρια στην οικογένειά του. Αιωνία η μνήμη του!</li>
+        <li><b>Μαρουδιά Κατερίνα</b>Θερμά συλλυπητήρια, καλό παράδεισο.</li>
+        <li><b>Θεοδοσία Τζαδήμα</b>Θερμά συλλυπητήρια!!</li>
+        <li><b>Μιχάλης Ρενέ Ψυχάκη</b>Θερμά συλλυπητήρια.</li>
+        <li><b>Giannis Kaleodis</b>Θερμά συλλυπητήρια σε όλη την οικογένεια.</li>
+        <li><b>Μαρούλα Δεσύπρη</b>Θερμά συλλυπητήρια στην οικογένειά του.</li>
+        <li><b>Maria Krommyda</b>Θερμά συλλυπητήρια στην οικογένειά του.</li>
+        <li><b>Δημήτρης Μπάσιος</b>Τα θερμά μου συλλυπητήρια στην οικογένειά του!!</li>
+        <li><b>Το Σοκάκι Τήνος</b>Τα θερμά μου συλλυπητήρια σε όλη την οικογένεια.</li>
+        <li><b>Marizan Prelorentzou</b>Θερμά συλλυπητήρια.</li>
+        <li><b>Ζωή Νώε</b>Η Παναγιά να σου δίνει παρηγοριά στον χαμό του παιδιού σου. Ο Θεός να σου δίνει κουράγιο, Βαγγελίτσα, και καλό Παράδεισο να έχει ο Αριστείδης σου! Συλλυπητήρια από την οικογένειά μας!</li>
+        <li><b>Βιβή Δούκα</b>Καλό παράδεισο.</li>
+        <li><b>Μαρία Καρδαμίτση Ζαλώνη</b>Άγγελοι στην ψυχούλα του.</li>
+        <li><b>Lakis Kamolinos</b>Τα ειλικρινή μου συλλυπητήρια στην οικογένειά του.</li>
+      </ul>
+    </details>
+  </article>
+
+  <article class="post" id="kafetzis">
+    <p class="meta"><span class="who">Ανδρέας Καφετζής</span><span>20 Οκτωβρίου 2026</span><span class="via">κοινοποίηση από Κατερίνα</span></p>
+    <h2 class="title">«Ο μεγάλος Τηνιακός»</h2>
+    <div class="photos grid">
+      <figure class="photo"><img src="photos/kafetzis1.jpg" alt="Φωτογραφία από την ανάρτηση του Ανδρέα Καφετζή" loading="lazy"></figure>
+      <figure class="photo"><img src="photos/kafetzis2.jpg" alt="Φωτογραφία από την ανάρτηση του Ανδρέα Καφετζή" loading="lazy"></figure>
+      <figure class="photo"><img src="photos/kafetzis3.jpg" alt="Φωτογραφία από την ανάρτηση του Ανδρέα Καφετζή" loading="lazy"></figure>
+      <figure class="photo"><img src="photos/kafetzis4.jpg" alt="Φωτογραφία από την ανάρτηση του Ανδρέα Καφετζή" loading="lazy"></figure>
+    </div>
+    <blockquote>
+      <p>ΑΡΙΣΤΕΙΔΗΣ ΚΟΝΤΟΓΙΩΡΓΗΣ, Ο ΜΕΓΑΛΟΣ ΤΗΝΙΑΚΟΣ.</p>
+      <p>Ο Αριστειδάκος, ο κουμπάρος μας, ένας ευγενής άνθρωπος. Πέταξε στους ουρανούς σήμερα για να φωτογραφίζει τον κόσμο τούτο, την Τήνο πρώτα απ’ όλα, χωρίς να χρειάζεται ελικόπτερα και drones. Στις τρεις κυρίες του, τη Νέλυ, την Κατερίνα και την Ευαγγελία, η μνήμη του Αριστείδη θα είναι σημείο αναφοράς γι’ αυτό που λέγανε «καλός καγαθός», το οποίο τείνει να εκλείψει σήμερα.</p>
+    </blockquote>
+    <p class="count">34 αντιδράσεις · 5 σχόλια · 1 κοινοποίηση</p>
+    <details class="comments">
+      <summary>Σχόλια (5)</summary>
+      <ul>
+        <li><b>Aphrodite Strataki</b>Ο Θεός να αναπαύει την ψυχούλα του! Συλλυπητήρια!</li>
+        <li><b>Marianna Paulidou</b>Καλό παράδεισο να έχει!</li>
+        <li><b>Ματίνα Παπαδοπούλου Οργαντζή</b>Συλλυπητήρια!!!</li>
+        <li><b>Νίτσα Μπαμπούρα</b>Συλλυπητήρια.</li>
+        <li><b>Ρόνα Καπ</b>Καλή του ανάπαυση!!!</li>
+      </ul>
+    </details>
+  </article>
+
+  <article class="post" id="rodamitis">
+    <p class="meta"><span class="who">Θέμης Ροδαμίτης</span><span>20–21 Οκτωβρίου 2026</span><span class="via">κοινοποίηση από Κατερίνα και Ευαγγελία</span></p>
+    <h2 class="title">«Ο άνθρωπος που με πρωτοέφερε στην Τήνο»</h2>
+    <figure class="photo"><img src="photos/rodamitis.png" alt="Ο Αριστείδης Κοντογεώργης, φωτογραφία από την ανάρτηση του Θέμη Ροδαμίτη" loading="lazy"></figure>
+    <blockquote>
+      <p>Έφυγε από τη ζωή ο πολυαγαπημένος μου φίλος ΑΡΙΣΤΕΙΔΗΣ ΚΟΝΤΟΓΙΩΡΓΗΣ. Ο άνθρωπος που με πρωτοέφερε στις αρχές του 2000 στην Τήνο και στο Φεστιβάλ.</p>
+      <p>Έχω νωπές τις μνήμες από το καλοκαίρι που πέρασα μαζί του και αυτό κάνει το πένθος ακόμα πιο σκοτεινό.</p>
+      <p>Ο ΑΡΙΣΤΕΙΔΗΣ ΚΟΝΤΟΓΙΩΡΓΗΣ υπήρξε άνθρωπος γενναιόδωρος, αλληλέγγυος και τρυφερός με τους ανθρώπους. Αγάπησε πολύ την Τήνο και προσέφερε πολλά στο νησί.</p>
+      <p>Τα θερμά μου συλλυπητήρια στην Ελένη και στις αγαπημένες του κόρες.</p>
+      <p>Θα τον θυμάμαι πάντα ως έναν ευγενικό και αγαπημένο φίλο.</p>
+    </blockquote>
+    <p class="count">216 αντιδράσεις · 17 σχόλια (η κοινοποίηση της Κατερίνας: 27 αντιδράσεις, της Ευαγγελίας: 14)</p>
+    <details class="comments">
+      <summary>Σχόλια (17)</summary>
+      <ul>
+        <li><b>Gianni Dellatola</b>Είναι δύσκολο να περιγράψεις την προσωπικότητά του με λόγια.</li>
+        <li><b>Marinos Palamaris</b>Για την ιστορία, το μακρινό 1987 είχε επιμεληθεί τη διακόσμηση του all day cafe-bar «Φευγάτος», που ήταν για πολλά χρόνια σημείο αναφοράς στο νησί. Μόλις είχε έρθει από την Αμερική και είχε επίσης ανοίξει τα «Καλά καθούμενα», που και αυτό άφησε εποχή για την αισθητική και το στήσιμό του. Αιωνία του η μνήμη και τα συλλυπητήριά μου στην οικογένειά του και στους οικείους του!</li>
+        <li><b>Κωστούλα Τωμαδάκη</b>Τα ειλικρινή μου συλλυπητήρια.</li>
+        <li><b>Ευάγγελος Παπαγεωργίου</b>Ήταν ΕΞΑΙΡΕΤΙΚΟΣ...... Καλό του ταξίδι......</li>
+        <li><b>Vivi Kitsou</b>Σας εκφράζω τη λύπη μου. Είναι οδυνηρό να χάνεις αγαπημένους φίλους.</li>
+        <li><b>Katerina Kavalioti</b>Πόσο συμφωνώ μαζί σας. Ένας εξαιρετικός άνθρωπος, με μια μεγάλη αγάπη για την Τήνο και τον πολιτισμό της.</li>
+        <li><b>Giogia Siokou</b>Τα θερμά μου συλλυπητήρια.</li>
+        <li><b>Orestis Koletsos</b>Θερμά συλλυπητήρια Θέμη…</li>
+        <li><b>Ελένη Τζαγκαράκη</b>Στο φως... ειλικρινή συλλυπητήρια Θέμη.</li>
+        <li><b>Χρυσούλα Ιωαννίδου</b>Καλό παράδεισο να έχει. Συλλυπητήρια.</li>
+        <li><b>Peny Xenaki</b>Θέμη μου... Λυπάμαι πολύ...</li>
+        <li><b>Marialena Angelidou</b>Τα θερμά μου συλλυπητήρια!</li>
+        <li><b>Konstantinos Kafandaris</b>Θερμά συλλυπητήρια!!</li>
+        <li><b>Eleni Veltsou</b>Καλό του ταξίδι!</li>
+        <li><b>Eudokia Statiri</b>Συλλυπητήρια Θέμη!</li>
+        <li><b>Sofia Michailidi</b>Λυπάμαι με την απώλειά σου Θέμη μου! Κουράγιο....</li>
+        <li class="reply"><b>Στην κοινοποίηση της Κατερίνας · Aristides Kontogeorgis</b>Ο αγαπημένος μας Αριστείδης είχε συνεχή προσφορά στο νησί, την οποία ούτε διαφήμιζε ούτε πρόβαλε ούτε προσπάθησε να εξαργυρώσει με οποιοδήποτε τρόπο.</li>
+        <li class="reply"><b>Στην κοινοποίηση της Ευαγγελίας · Eva Pantazatou</b>Συλλυπητήρια Ευαγγελία! Ο Θεός να αναπαύσει την ψυχή του!</li>
+      </ul>
+    </details>
+  </article>
+
+  <article class="post" id="koulouras1">
+    <p class="meta"><span class="who">Μπάμπης Κουλούρας</span><span>20–21 Οκτωβρίου 2026</span><span class="via">με Tinos LIVE TV και 5 ακόμη · κοινοποίηση από Κατερίνα</span></p>
+    <h2 class="title">«Ένας αληθινός ευπατρίδης της τέχνης και της ζωής»</h2>
+    <figure class="photo"><a href="https://www.youtube.com/watch?v=TcLFf4mU0r0" target="_blank" rel="noopener"><img src="photos/koulouras1_yt.jpg" alt="Βίντεο: «Η Σύρος από ψηλά», παρουσίαση του λευκώματος" loading="lazy"></a><figcaption>Βίντεο: «Η Σύρος από ψηλά», παρουσίαση του φωτογραφικού λευκώματος (YouTube, πατήστε για αναπαραγωγή).</figcaption></figure>
+    <blockquote>
+      <p>ΑΡΙΣΤΕΙΔΗΣ ΚΟΝΤΟΓΕΩΡΓΗΣ. Ένας αληθινός ευπατρίδης της τέχνης και της ζωής έφυγε πολύ νωρίς από κοντά μας. Πάντα όμως θα τον συναντάμε στις υπέροχες αναμνήσεις που μας άφησε, στις πολύτιμες φωτογραφίες του, στις στιγμές που αναρωτιόμαστε τι σημαίνει να είσαι αληθινός φίλος, αληθινός δάσκαλος, υπέροχος πατέρας, αληθινός ΑΝΘΡΩΠΟΣ. Τα πιο τρυφερά μου συναισθήματα στην οικογένειά του, που θα είναι πολύ υπερήφανη γι’ αυτόν...</p>
+    </blockquote>
+    <p class="count">22 αντιδράσεις · 2 σχόλια · 2 κοινοποιήσεις</p>
+    <details class="comments" open>
+      <summary>Σχόλια (2)</summary>
+      <ul>
+        <li><b>Andriana Villa</b>Αιώνια η μνήμη του.</li>
+        <li><b>Έφη Χατζή</b>Ευχαριστούμε.</li>
+      </ul>
+    </details>
+  </article>
+
+  <article class="post" id="tawfik">
+    <p class="meta"><span class="who">Tawfik Youssef</span><span>20 Οκτωβρίου 2026</span><span class="via">στο προφίλ της Κατερίνας, με την ανάρτηση του Tinos Today</span></p>
+    <h2 class="title">«More than a friend... a brother»</h2>
+    <blockquote class="en">
+      <p>Feeling just sad... more than a friend... a brother... just joined the stars without saying goodbye... We miss him already... All our heartfelt condolences to Eleni, Katerina, Evangelia, all the family and the people of Tinos.</p>
+    </blockquote>
+    <p class="count">13 αντιδράσεις · 6 σχόλια</p>
+    <details class="comments">
+      <summary>Σχόλια (4)</summary>
+      <ul>
+        <li><b>Tawfik Youssef</b>Tomorrow Saturday 24/10 in Tinos we will say farewell to the last of his, far away, journey my beloved dad, the best dad in the world. The beloved Aristeidis Kontogeorgis to all of us. A man with many values, ethics, gentleness, calmness, willing to listen and help everyone. Irreplaceable in many places where he will be missed by all of us. <i>(μετάφραση της ανάρτησης της Κατερίνας· στη συνέχεια αναδημοσίευσε στα αγγλικά και την αγγελία του Tinos LIVE TV)</i></li>
+        <li><b>Salwa Habib</b>Rip, God bless his soul.</li>
+        <li><b>Amy Guirguis</b>My condolences to you and the entire family. May God comfort you and all the family and give peace!</li>
+        <li><b>Salwa Guirgis</b>May his soul rest in peace, our condolence to you and his family.</li>
+      </ul>
+    </details>
+  </article>
+
+  <article class="post" id="pipinis">
+    <p class="meta"><span class="who">Χρήστος Πιπίνης</span><span>20–21 Οκτωβρίου 2026</span><span class="via">imaginistes.org · κοινοποίηση από Ευαγγελία</span></p>
+    <h2 class="title">«Μπραχαμιώτες καλλιτέχνες… Αριστείδης Κοντογεώργης»</h2>
+    <div class="photos two"><figure class="photo"><img src="photos/pipinis_cover.jpg" alt="Πορτρέτο του Αριστείδη Κοντογεώργη από το imaginistes.org" loading="lazy"></figure><figure class="photo"><img src="photos/pipinis_eksouranou.jpg" alt="Το εξώφυλλο του λευκώματος «Εξ ουρανού»" loading="lazy"></figure></div>
+    <blockquote>
+      <p>Στη μνήμη του αγαπημένου μας φίλου και συμπολίτη, Αριστείδη Κοντογεώργη, που μας αποχαιρέτησε πρόσφατα.</p>
+      <p>Σειρά στους «Μπραχαμιώτες καλλιτέχνες» παίρνει σήμερα ο Αριστείδης Κοντογεώργης, ένας εκ των κορυφαίων Ελλήνων φωτογράφων. Με τον Αριστείδη γνωριστήκαμε στην έκδοση του Λευκώματος του Αγ. Δημητρίου του Β. Καρδάση, όταν προέκυψε η ανάγκη να «διασώσουμε» μερικά παλιά κτίσματα του Μπραχαμίου με τον φωτογραφικό φακό και ζητήσαμε φυσικά τη βοήθειά του, όπου και δέχθηκε με ιδιαίτερη χαρά και προθυμία. Κατάφερε λοιπόν να αποτυπώσει εξαιρετικά στο βιβλίο μερικά από τα λίγα εναπομείναντα παλαιά σπίτια της περιοχής, αφού δεν «μπορούμε» να τα διασώσουμε στην πραγματικότητα.</p>
+      <p>Ο Αριστείδης δεν είναι γέννημα, είναι όμως θρέμμα της συνοικίας μας, επειδή εδώ και πολλά χρόνια ρίζωσε στον τόπο μας, έκανε οικογένεια και μοιράζεται πλέον μαζί μας τις κοινές αγωνίες και βιώνει καθημερινά τις ελλείψεις και τα προβλήματα της συνοικίας που ζει αυτός και η οικογένειά του.</p>
+      <p>Ο Αριστείδης Κοντογεώργης είναι ένας ευγενέστατος, ιδιαίτερα ζεστός, χωρίς καμία έπαρση χαρακτήρας, που σε κερδίζει με την αμεσότητα των τρόπων και της συμπεριφοράς του. Πρόκειται για σπουδαίο φωτογράφο, συγγραφέα, με πολλές εκθέσεις, διεθνή αναγνώριση και καθηγητική εμπειρία.</p>
+      <p>Ο Αριστείδης παραμένει άγνωστος στο Μπραχάμι, επειδή ουδέποτε κάποιος αρμόδιος του Δήμου τού πρότεινε μιας μορφής συνεργασία, κάποια έκθεση με έργα του ή μια εκδήλωση όπου θα τιμηθεί η προσφορά του. Δεν συζητάμε φυσικά και για αξιοποίηση της καθηγητικής του εμπειρίας με μια πιθανή ίδρυση ενός φωτογραφικού δημοτικού εργαστηρίου. Δεν είναι άλλωστε ούτε ο πρώτος ούτε ο τελευταίος που αγνοείται από τον Δήμο.</p>
+    </blockquote>
+    <p class="note">Αναδημοσίευση, στη μνήμη του, του κειμένου του Χρήστου Πιπίνη από το imaginistes.org (πρώτη δημοσίευση 21.4.2013, αναδημοσίευση 17.11.2023). Το άρθρο συνοδεύεται από σύντομο βιογραφικό και από μια φωτογραφία του με περιστεριώνα της Τήνου.</p>
+    <p class="count">10 αντιδράσεις · 12 κοινοποιήσεις · η κοινοποίηση της Ευαγγελίας: 26 αντιδράσεις</p>
+  </article>
+
+  <article class="post" id="adelfotita">
+    <p class="meta"><span class="who">Αδελφότητα των εν Αθήναις Τηνίων</span><span>21 Οκτωβρίου 2026</span><span class="via">μέσω Tinos Today · κοινοποίηση από Κατερίνα και Ευαγγελία</span></p>
+    <h2 class="title">«Έφυγε εξ ουρανού» για το μεγάλο ταξίδι ο δικός μας Αριστείδης</h2>
+    <figure class="photo"><img src="photos/tinostoday2.png" alt="Η εικόνα της ανάρτησης του Tinos Today" loading="lazy"></figure>
+    <blockquote>
+      <p>Το Διοικητικό Συμβούλιο και τα μέλη της Αδελφότητος των εν Αθήναις Τηνίων εκφράζουν τη βαθύτατη οδύνη τους για την απώλεια του αγαπημένου μας συνεργάτη, φίλου και συνοδοιπόρου, Δρ. Αριστείδη Χ. Κοντογεώργη.</p>
+      <p>Ο Αριστείδης δεν ήταν απλώς ένας καταξιωμένος επιστήμονας και Αναπληρωτής Καθηγητής του Πανεπιστημίου Δυτικής Αττικής. Ήταν ένας άνθρωπος που κουβαλούσε την Τήνο βαθιά μέσα στην ψυχή του. Με τον φωτογραφικό του φακό κατάφερε να «αιχμαλωτίσει» το φως, τις πέτρες, τους περιστεριώνες και τις θάλασσες του νησιού μας, χαρίζοντάς μας μια ανεκτίμητη παρακαταθήκη. Η συμβολή του στις εκδόσεις και το πολιτιστικό έργο της Αδελφότητάς μας υπήρξε καθοριστική και ανιδιοτελής.</p>
+      <p>Το κενό που αφήνει πίσω του στην τέχνη, την εκπαίδευση και την τηνιακή κοινότητα είναι δυσαναπλήρωτο. Θα τον θυμόμαστε πάντα για το ήθος, την ευγένεια και την αστείρευτη δημιουργικότητά του.</p>
+      <p>Εκφράζουμε τα ειλικρινή και θερμά μας συλλυπητήρια στην οικογένεια και τους οικείους του. Καλό ταξίδι στο φως, Αριστείδη. Η Τήνος σου θα σε θυμάται πάντα μέσα από τις εικόνες που της χάρισες.</p>
+    </blockquote>
+    <p class="note">Άρθρο: «“Έφυγε εξ ουρανού” για το μεγάλο ταξίδι ο δικός μας Αριστείδης» (tinostoday.gr, 21.10.2026).</p>
+    <p class="count">230 αντιδράσεις · 16 σχόλια · 10 κοινοποιήσεις</p>
+    <details class="comments">
+      <summary>Σχόλια (15)</summary>
+      <ul>
+        <li><b>Πέτρος Τριαντάφυλλος</b>Θερμά συλλυπητήρια στην οικογένειά του... Αιωνία του η μνήμη.</li>
+        <li><b>Elisavet Kalabaliki</b>Καλό ταξίδι στο φως! Θερμά συλλυπητήρια στην οικογένειά του.</li>
+        <li><b>Λυδία Ιωαννίδου Μουζάκα</b>Αιωνία του η μνήμη. Καλό Παράδεισο να έχει. Θερμά συλλυπητήρια στους οικείους του.</li>
+        <li><b>Korre Maria</b>Καλό παράδεισο! Συλλυπητήρια στην οικογένειά του!</li>
+        <li><b>Eleni Krikelli</b>Θερμά συλλυπητήρια στην οικογένεια.</li>
+        <li><b>Aggeliki Kondyla</b>Θερμά συλλυπητήρια στην οικογένειά του!!</li>
+        <li><b>Λαμπρινή Ασημομύτη</b>Θερμά συλλυπητήρια στην οικογένειά του.</li>
+        <li><b>Ευαγγελία Αθηναίου</b>Καλό παράδεισο.</li>
+        <li><b>Γιώργος Μέλης</b>Καλό παράδεισο.</li>
+        <li><b>Πηνελόπη Τριγώνη</b>Θερμά συλλυπητήρια στην οικογένειά του.</li>
+        <li><b>Michael Sakatis</b>Καλό Παράδεισο.</li>
+        <li><b>Ζωή Νώε</b>Καλό Παράδεισο. Θερμά συλλυπητήρια στην οικογένειά του!!!!</li>
+        <li><b>Evaggelia Desipri</b>Θερμά συλλυπητήρια.</li>
+        <li><b>Μαρία Καρδαμίτση Ζαλώνη</b>Άγγελοι στην ψυχούλα του.</li>
+        <li><b>Alexandra Karavelatzis</b>(αντίδραση χωρίς κείμενο)</li>
+      </ul>
+    </details>
+  </article>
+
+  <article class="post" id="evangelia">
+    <p class="meta"><span class="who">Ευαγγελία Κοντογεώργη</span><span>21 Οκτωβρίου 2026</span></p>
+    <h2 class="title">«Γλυκέ μου μπαμπά»</h2>
+    <figure class="photo"><img src="photos/evangelia.jpg" alt="Ο Αριστείδης Κοντογεώργης, φωτογραφία από την ανάρτηση της Ευαγγελίας" loading="lazy"></figure>
+    <blockquote>
+      <p>Γλυκέ μου μπαμπά ή αλλιώς μπαμπάκα όπως σε φωνάζαμε χαϊδευτικά, δεν έχω λόγια να περιγράψω όλα όσα κρύβω στην ψυχή μου σήμερα. Μου ράγισε η καρδιά και το κενό που άφησες φεύγοντας φαντάζει αξεπέραστο. Έγιναν όλα τόσο ξαφνικά. Μισώ τον τρόπο με τον οποίο η ζωή μας παίζει παιχνίδια και κάθε φορά μας αιφνιδιάζει ακόμα περισσότερο.</p>
+      <p>Κι όμως δεν μπορώ παρά να είμαι ευγνώμων για τον χρόνο που περάσαμε μαζί όλα αυτά τα χρόνια και ιδιαίτερα αυτές τις τελευταίες μέρες, γεμάτες με τόσες στιγμές αγωνίας, χαράς, θάρρους, υπομονής, αισιοδοξίας, λύπης, μα ποτέ δεν χάσαμε την ελπίδα μας ότι όλα θα πήγαιναν καλά! Δεν θα ξεχάσω ποτέ το βλέμμα σου τις ημέρες που όλο αγωνία με ρωτούσες το πρωί αν θα πάρεις σήμερα το φάρμακο, ούτε την έκφραση ανακούφισης που σε έκανε να κλείνεις τα μάτια με ασφάλεια όταν σου απαντούσα ναι! Δεν έχασες ποτέ τη δύναμη και το κουράγιο σου και συνέχισες να προσπαθείς και να πολεμάς μέχρι το τέλος!</p>
+      <p>Ήσουν για μένα η ήρεμη, γαλήνια φιγούρα στη ζωή μου, αυτή που με λίγα λόγια, σοφά και στοχευμένα, μπορούσε πάντα να μου δημιουργήσει ασφάλεια και να δώσει λύση σε κάθε πρόβλημά μου. Μας δίδαξες αρχές και αξίες με το ήθος και την αξιοπρέπειά σου σε κάθε δίλημμα!</p>
+      <p>Έκανες τόσα πολλά πράγματα μέσα σε τόσο λίγο χρόνο, σαν να ήξερες ότι θα φύγεις νωρίς!</p>
+      <p>Αγαπούσες τους φίλους και νοιαζόσουν τους γνωστούς σου σε Ελλάδα και σε όλο τον κόσμο. Είχες μια αγκαλιά έτοιμη να ζεστάνει ανθρώπους αλλά και ζώα που θα τύχαιναν στον δρόμο σου, πάντα με αθόρυβο και διακριτικό τρόπο.</p>
+      <p>Το χιούμορ σου ήταν ευφυές και μοναδικό! Δεν ήταν τυχαίο άλλωστε που κάθε φορά που κάποιος σε ρωτούσε «πώς, αφού έχεις τέτοιο ταλέντο στη ζωγραφική, εσύ ασχολείσαι με τη φωτογραφία», απαντούσες αυτοσαρκαζόμενος: «είναι χαρακτηριστικό των τεμπέληδων, με ένα κουμπί βγαίνει η εικόνα που θα χρειαζόταν ώρες ολόκληρες να ζωγραφίσει κανείς».</p>
+      <p>Αγαπούσες πολύ τη δουλειά σου και ενδιαφερόσουν αληθινά για τους φοιτητές σου! Έστειλες στο εξωτερικό με Erasmus περισσότερους φοιτητές από όσους παρακολουθούσαν διαλέξεις στην Ελλάδα!</p>
+      <p>Λάτρευες την Τήνο και προσπαθούσες με τον τρόπο σου να συμβάλεις ώστε να διασωθεί η παράδοση και ο αυθεντικός της χαρακτήρας!</p>
+      <p>Σου άρεσε να ταξιδεύεις και να θαυμάζεις τις ομορφιές κάθε τόπου, ενώ είχες έναν μοναδικό τρόπο να δημιουργείς αληθινές σχέσεις με ανθρώπους από κάθε γωνιά της γης!</p>
+      <p>Μα πάνω από όλα αγαπούσες πολύ την οικογένειά σου! Φρόντιζες εμένα, την Κατερίνα και τη μαμά, αλλά και τη μαμά και την αδερφή σου, και συνέχισες να το κάνεις ακόμα και από το νοσοκομείο!</p>
+      <p>Μπαμπά μου, ήμουν πάντοτε περήφανη για σένα! Σε αγαπώ πολύ και μου λείπεις. Καλό ταξίδι μπαμπάκα!</p>
+      <p>Η εξόδιος ακολουθία θα πραγματοποιηθεί το Σάββατο 24 Οκτωβρίου στον Ιερό Ναό Αγίου Ελευθερίου στη Χώρα της Τήνου, στη 1 μ.μ.</p>
+    </blockquote>
+    <p class="count">299 αντιδράσεις · 109 σχόλια · 8 κοινοποιήσεις</p>
+    <details class="comments">
+      <summary>Σχόλια (109)</summary>
+      <ul>
+        <li><b>Maria Skandali</b>Θερμά συλλυπητήρια Ευαγγελία.</li>
+        <li><b>Nikitas Paschalis</b>Θερμά συλλυπητήρια, να είστε πάντα καλά να τον θυμάστε.</li>
+        <li><b>Michail Pavlidis</b>Θερμά συλλυπητήρια! Ζωή σε εσάς!</li>
+        <li><b>Βάσω Ναφ</b>Συλλυπητήρια Ευαγγελία, καλή δύναμη.</li>
+        <li><b>Katy Chou</b>Συλλυπητήρια Ευαγγελία, να τον θυμάστε με αγάπη.</li>
+        <li><b>Spartakos Iordanidis</b>Τα συλλυπητήριά μου. Πολύ στενάχωρο και λυπηρό. Καλό Παράδεισο να έχει και δύναμη σε σας να αντέξετε.</li>
+        <li><b>Betty Tzianoudaki</b>Θερμά συλλυπητήρια Ευαγγελία μου! Καλό Παράδεισο στον μπαμπάκα σου.</li>
+        <li><b>Λίτσα Οικονόμου</b>Θερμά συλλυπητήρια, να τον θυμάστε πάντα με αγάπη.</li>
+        <li><b>Stella Peleka</b>Θερμά συλλυπητήρια Ευαγγελία μου!!!</li>
+        <li><b>Tonia Fragkoylia</b>Συλλυπητήρια Ευαγγελία μου.</li>
+        <li><b>Fani Stravoula Kaneloglou</b>Ευαγγελία μου συλλυπητήρια... Να ζήσετε να τον θυμάστε...</li>
+        <li><b>Βασίλης Μαστοράκης</b>Ευαγγελία μου, καλό παράδεισο στον μπαμπά σου, να έχεις πάντα την αγάπη του και το παράδειγμά του για οδηγό σου.</li>
+        <li><b>Rania Karabogia</b>Λυπάμαι πολύ, Ευαγγελία μου! Συλλυπητήρια και κουράγιο... Θα ζει πάντα μέσα από εσάς...</li>
+        <li><b>Στεφανία Συροπούλου</b>Συλλυπητήρια Ευαγγελία μου, να έχετε την ευχή του.</li>
+        <li><b>Katerina Kollia</b>Συλλυπητήρια Ευαγγελία μου.</li>
+        <li><b>Κωνσταντίνα Μελισσουργού</b>Συλλυπητήρια Ευαγγελία.</li>
+        <li><b>Γιώργος Κατσαγούνος</b>Τα συλλυπητήριά μου, να είσαι καλά να τον θυμάσαι.</li>
+        <li><b>Katerina Kakou</b>Θερμά συλλυπητήρια Ευαγγελία μου.</li>
+        <li><b>Δημήτρης Κουτσιαύτης</b>Συλλυπητήρια. Να ζήσετε να τον θυμάστε.</li>
+        <li><b>Vasiliki Ntouni</b>Γλυκό μου κορίτσι, να σας δίνει πάντα δύναμη η ανάμνηση και η ευχή του. Τα ειλικρινή μου συλλυπητήρια...</li>
+        <li><b>Boulougari Eleni</b>Συλλυπητήρια κοριτσάκι μου!</li>
+        <li><b>Eleni Golia</b>Θερμά συλλυπητήρια Ευαγγελία μου, να ζήσετε να τον θυμάστε με αγάπη!</li>
+        <li><b>Μαρίνα Παγανέλη</b>Θερμά συλλυπητήρια Ευαγγελία μου, να έχετε την ευχή του.</li>
+        <li><b>Τζούλια Ευστρατίου</b>Θερμά συλλυπητήρια, καλό πέρασμα στο φως!!</li>
+        <li><b>Stefania Kotzabasaki</b>Θερμά συλλυπητήρια, να είστε καλά να τον θυμάστε Ευαγγελία μου!</li>
+        <li><b>Άννα Σάββαρη</b>Θερμά συλλυπητήρια! Να τον θυμόμαστε πάντα Ευαγγελία!</li>
+        <li><b>Vaso Iakovaki</b>Θερμά συλλυπητήρια Ευαγγελία μου!! Να είστε πάντα καλά και να τον θυμόσαστε με αγάπη! Πολύ λυπάμαι πραγματικά... μεγάλη απώλεια...</li>
+        <li><b>Katerina Kontinopoulou</b>Θερμά συλλυπητήρια Ευαγγελία μου! Καλή ανάπαυση στην ψυχούλα του! Να ζήσετε να τον θυμόσαστε!</li>
+        <li><b>Gosia Margo Koszyk</b>I’m very sorry for your loss, Evangelia.</li>
+        <li><b>Ειρήνη Ευθυμίου</b>Θερμά συλλυπητήρια Ευαγγελία μου! Καλό Παράδεισο στον μπαμπάκα σου. Να τον θυμάστε πάντα με αγάπη.</li>
+        <li><b>Lia Lazarou</b>Θερμά συλλυπητήρια σε όλη την οικογένεια! Να είστε πάντα καλά να τον θυμάστε! Καλό παράδεισο!</li>
+        <li><b>Lefteris Zemelis</b>Συλλυπητήρια και δύναμη σε όλους σας!!</li>
+        <li><b>Irini Malefaki</b>Θερμά συλλυπητήρια, να τον θυμάστε με αγάπη.</li>
+        <li><b>Γεωργία Δύρλα</b>Ευαγγελία μου, τα θερμά μου συλλυπητήρια για την απώλειά σου. Δεν υπάρχουν λόγια να απαλύνουν τον πόνο σου. Εύχομαι να τον θυμάσαι πάντα με αγάπη.</li>
+        <li><b>Maria Lianou</b>Θερμά συλλυπητήρια Ευαγγελία.</li>
+        <li><b>Natasa Loukeri</b>Να είστε καλά να τον θυμάστε με αγάπη.</li>
+        <li><b>Aggeliki Tzamtzi</b>Δυστυχώς οι καλοί άνθρωποι γίνονται από νωρίς άγγελοι!</li>
+        <li><b>Katerina Velalop</b>Συλλυπητήρια! Η ευχή του πάντα να σας συντροφεύει!!!</li>
+        <li><b>Valadis Agos</b>Ειλικρινά συλλυπητήρια, δεν έχω λόγια.</li>
+        <li><b>Marilena Rigou</b>Συλλυπητήρια Ευαγγελία μου. Να ζήσετε να τον θυμόσαστε... Είναι πολύ δύσκολες οι στιγμές αυτές, δυστυχώς δεν έχουν νόημα τα λόγια... Κουράγιο σε όλους σας!!</li>
+        <li><b>Despina Tremopoulou</b>Θερμά συλλυπητήρια Ευαγγελία μου.</li>
+        <li><b>Joanna Papazoglou</b>Τα θερμά μου συλλυπητήρια Ευαγγελία μου... καλό Παράδεισο να έχει...</li>
+        <li><b>Ilia Iliopoulou</b>Ευαγγελία μου, θερμά συλλυπητήρια για τον αξιολάτρευτο πατερούλη σου!! Το κενό που θα σου αφήσει η παρουσία του θα το γεμίσεις με τις αναμνήσεις σου και την αγάπη του, που θα σου τη δίνει ακόμα και από εκεί που θα είναι τώρα!! Έτσι γίνεται... θα το καταλάβεις με τον καιρό!! Τα συλλυπητήριά μου και στη μαμά σου και την Κατερίνα!!!</li>
+        <li><b>Eva Pantazatou</b>Συλλυπητήρια! Ο Θεός να τον αναπαύσει!</li>
+        <li><b>Sofia Sideri</b>Συλλυπητήρια Ευαγγελία μου. Να ζήσεις να τον θυμάσαι!</li>
+        <li><b>Anthi Sotirianakou</b>Θερμά συλλυπητήρια…</li>
+        <li><b>Taxiarhoula Avgoustidi</b>Συλλυπητήρια, να ζείτε να τον θυμόμαστε.</li>
+        <li><b>Emmeleia Kaskoura</b>Συλλυπητήρια Ευαγγελία μου… θα είναι πάντα κοντά σου…</li>
+        <li><b>Μάγδα Στρατούλη</b>Κορίτσι μου αγαπημένο, να έχετε την ευχή του…. συλλυπητήρια...</li>
+        <li><b>Eirini Lazari</b>Συλλυπητήρια Ευαγγελία μου!</li>
+        <li><b>Zannina Fasli</b>Συλλυπητήρια Ευαγγελία μου, κουράγιο!!</li>
+        <li><b>Ξανθή Χαρμπαλή</b>Συλλυπητήρια Ευαγγελία μου, καλό παράδεισο.</li>
+        <li><b>Aggeliki Douligeri</b>Συλλυπητήρια Ευαγγελία μου! Καλό παράδεισο στον μπαμπά σου. Θα ζει πάντα μέσα από εσάς!</li>
+        <li><b>Maria Popota</b>Συλλυπητήρια Ευαγγελία μου!!!</li>
+        <li><b>Μάνια Καγιώργη</b>Λυπάμαι πολύ. Κουράγιο σε όλους σας. Να είστε καλά να τον θυμάστε.</li>
+        <li><b>Nick Ktistakis</b>Θερμά συλλυπητήρια Ευαγγελία! Να είστε πάντα καλά να τον θυμάστε!</li>
+        <li><b>Stelina Karkalemi</b>Θερμά συλλυπητήρια Ευαγγελία μου. Η αγάπη του πάντα θα είναι μαζί σας.</li>
+        <li><b>Alkisti Panagiotou</b>Συλλυπητήρια Ευαγγελία μου.</li>
+        <li><b>Kouzi Labrini</b>Θερμά συλλυπητήρια...</li>
+        <li><b>Marianna Moustaka</b>Συλλυπητήρια Ευαγγελία μου.</li>
+        <li><b>Eleni Georgakopoulou</b>Συλλυπητήρια Ευαγγελία μου, ζωή σε εσάς. Να αναπαύεται ειρηνικά και να έχετε την ευχή του.</li>
+        <li><b>Antonis Mitsis</b>Συλλυπητήρια από καρδιάς για έναν τόσο αξιόλογο άνθρωπο, φίλο και συγχωριανό μου. Ας μείνει στη μνήμη μας χαμογελαστός και γεμάτος αισιοδοξία και ελπίδα για όλους και για όλα.</li>
+        <li><b>Natassa Sampani</b>Τα θερμά μου συλλυπητήρια!!!</li>
+        <li><b>Χάρης Καραχάλιος</b>Συλλυπητήρια, Ευαγγελία!</li>
+        <li><b>Πηνελόπη Αλεξοπούλου</b>Θερμά συλλυπητήρια Ευαγγελία μου... Να ζήσετε να τον θυμάστε...</li>
+        <li><b>Michalis Papapanou</b>Τα θερμά μου συλλυπητήρια Ευαγγελία.</li>
+        <li><b>Savia Pittokopitou</b>Συλλυπητήρια Ευαγγελία μου, να ζήσετε να τον θυμάστε!</li>
+        <li><b>Ευθυμία Καζαντζή</b>Τα θερμά μου συλλυπητήρια στην οικογένειά του.</li>
+        <li><b>Μαρία Καδόγλου</b>Τα θερμά μου συλλυπητήρια. Να έχετε την ευχή του!!!</li>
+        <li><b>Argiris Rountis</b>Θερμά συλλυπητήρια Ευαγγελία.</li>
+        <li><b>Dora Bliona</b>Θερμά συλλυπητήρια...</li>
+        <li><b>Valentina Malofiy</b>I am without words! Our deepest condolences. Honored to have known him, we all loved him so much. Prayers of peace and comfort to you all. I am so sorry.</li>
+        <li><b>Polina Xanthaki</b>Θερμά συλλυπητήρια κορίτσι μου!</li>
+        <li><b>Νάσια Γουδεσίδου</b>Συλλυπητήρια, να είστε γερές να τον θυμάστε!</li>
+        <li><b>Anastasia Alexandrina</b>Θερμά συλλυπητήρια Ευαγγελία μου.</li>
+        <li><b>Dimitrislena Fouka</b>Συλλυπητήρια γλυκό μου πλάσμα!!! Να είστε καλά να τον θυμάστε!</li>
+        <li><b>Κατερίνα Γούναρη</b>Γλυκιά μου Ευαγγελία, πόσο όμορφα λόγια, πόσο με συγκίνησες με αυτά που έγραψες για τον μπαμπάκα σας! Να είναι καλά εκεί που πάει! Σε φιλώ!</li>
+        <li><b>Georgia Kotoula</b>Συλλυπητήρια Ευαγγελία μου.</li>
+        <li><b>Marie Devereux Curran</b>You’ve said this so well. Your father was like family to us. I said to Bob yesterday that he had such a warm and unique smile, that just made us feel special. He will be missed terribly.</li>
+        <li><b>Filomeni Tinos</b>Η ευχή του να σας συντροφεύει κορίτσια. Καλό Παράδεισο να έχει η ψυχούλα του.</li>
+        <li><b>Themis Rodamitis</b>Ευαγγελία, συγκινητικά τα λόγια σου. Ο μπαμπάκας σου ήταν ένας ξεχωριστός κι όμορφος άνθρωπος. Προσωπικά του οφείλω πολλά... Ναι, η Τήνος δεν θα είναι στα καλύτερά της. Κάποιοι άνθρωποι δίνουν αυτό το πολύτιμο που ανοίγει δρόμο για τους άλλους. Τέτοια χαρακτηριστικά στοιχεία είχε ο Αριστείδης. Αυτή η αναχώρηση αφήνει ερωτήματα που κινητοποιούν τη συνείδηση. Ας σκεφτεί ο καθένας τη δική του στάση στα κοινωνικά θέματα. Ο Αριστείδης αγάπησε και αγαπήθηκε. Αυτό κρατώ.</li>
+        <li><b>Paul Grapsas</b>Τα θερμά μου συλλυπητήρια Ευαγγελία. Ήταν και πολύ καλός καθηγητής. Καλό Παράδεισο να έχει.</li>
+        <li><b>Elena Hasanllari</b>Συλλυπητήρια Ευαγγελία μου.</li>
+        <li><b>Γιώργος Παρασκευάς</b>Θερμά συλλυπητήρια, Ευαγγελία, σε εσένα, στην Κατερίνα, στη μητέρα σας και σε όλη την οικογένεια. Ο μπαμπάς σου, ο Αριστείδης, ήταν ένας ευγενικός άνθρωπος και καμάρι για όλους εμάς τους Τηνιακούς. Με τον φακό του έδειξε τον τόπο μας όπως λίγοι τον είδαν. Η Τήνος θα τον θυμάται πάντα. Ας είναι ελαφρύ το χώμα της Τήνου που θα τον σκεπάσει. Καλό ταξίδι, Αριστείδη.</li>
+        <li><b>Αλεξάνδρα Πούλια</b>Λυπάμαι πολύ, Ευαγγελία μου. Η ψυχή του θα είναι πάντα κοντά σας. Κουράγιο, κορίτσι μου.</li>
+        <li><b>Ελευθερία Χατζηλιά</b>Τα θερμά μου συλλυπητήρια Ευαγγελία μου.</li>
+        <li><b>Σοφία Λογγινίδου</b>Θερμά συλλυπητήρια... Καλό παράδεισο στον μπαμπά σου.</li>
+        <li><b>Σπυριδούλα Μπακοχρήστου</b>Θερμά συλλυπητήρια Ευαγγελία μου.</li>
+        <li><b>Litsa Keladitou</b>Τα ειλικρινή μου συλλυπητήρια!</li>
+        <li><b>Kostas Karaiskos</b>Θερμά συλλυπητήρια, η ευχή του να σας συνοδεύει πάντα....</li>
+        <li><b>Βασιλική Βουρλή</b>Την ευχή του να ’χεις, αγαπημένη μου Ευαγγελία….</li>
+        <li><b>Minasyan Mariam</b>Συλλυπητήρια Ευαγγελία μου.</li>
+        <li><b>Konstantinos Alvertis</b>Συλλυπητήρια! Ζωή σε εσάς!</li>
+        <li><b>Theodoros N. Sergentanis</b>Θερμά συλλυπητήρια, πολυαγαπημένη μας Ευαγγελία. Να ζήσετε να τον θυμάστε.</li>
+        <li><b>Nestoras Rigos</b>Με τον πατέρα σας μάς συνέδεε μια φιλία ετών, βασισμένη στην αμοιβαία εκτίμηση. Όταν πριν τέσσερα χρόνια του είπα ότι θα έχει φοιτήτρια την κόρη μου στο ΠΑΔΑ, χάρηκε τόσο πολύ και μου υποσχέθηκε ότι θα την έχει σαν κόρη του. Αυτό το έπραξε στο ακέραιο μέχρι ο Θεός να τον πάρει κοντά του. Μόνο ευγνώμων είμαι στον πατέρα σας και βαθύτατα θλιμμένος.</li>
+        <li><b>Πέτρος Τριαντάφυλλος</b>Θερμά συλλυπητήρια... Να έχετε την ευχή του.</li>
+        <li><b>Anna Prelorentzou</b>Θερμά συλλυπητήρια!!!!</li>
+        <li><b>Victor Palamaris</b>Τα θερμά μου συλλυπητήρια σε όλη την οικογένειά σας. Να είσαστε όλοι πάντα καλά και να τον θυμόσαστε με αγάπη.</li>
+        <li><b>Nikos Magies</b>Θερμά συλλυπητήρια, να είσθε καλά να τον θυμάστε.</li>
+        <li><b>Ζέτα Κουτσογεωργοπούλου</b>Θερμά συλλυπητήρια Εύα μου, σε όλη την οικογένεια! Να ζήσετε να τον θυμάστε!</li>
+        <li><b>Afroditi Tripyla</b>Ευαγγελία μου θερμά συλλυπητήρια!! Καλή δύναμη και κουράγιο σε όλους σας!!</li>
+        <li><b>Michail Spanos</b>Συλλυπητήρια μέσα απ’ την καρδιά μου Ευαγγελία.</li>
+        <li><b>Andreas Dafnis</b>Συλλυπητήρια Ευαγγελία μου, να είστε γεροί να τον θυμάστε!</li>
+        <li><b>Elena Korakianiti</b>Συλλυπητήρια Ευαγγελία! Ζωή σε εσάς.</li>
+        <li><b>Κωνσταντίνα Συλίκου</b>Πόσο λυπάμαι.... ειλικρινή συλλυπητήρια..... να σε συντροφεύει η ευχή του σε όλη σου τη ζωή..... καλό ταξίδι στο Φως............</li>
+        <li><b>Maria Papas</b>Θερμά συλλυπητήρια! Καλό ταξίδι!</li>
+        <li><b>Antonia Plyta Home</b>Να έχετε την ευχή του!! Τα συλλυπητήριά μου σε όλη την οικογένειά σας! Ήταν ξεχωριστός άνθρωπος, γεμάτος από ευγένεια.</li>
+        <li><b>Katerina Vakalopoulou</b>Λυπάμαι πολύ για την απώλειά σας Ευαγγελία μου, αλλά παράλληλα χαίρομαι πολύ να διαβάζω αυτό το κείμενο, γεμάτο αγάπη, εκτίμηση και γνήσιο θαυμασμό για τον μπαμπά σου. Ακούγεται πραγματικά υπέροχος. Ζωή σε σας. Να ζείτε με την έμπνευση που έδωσε και θα ζει πάντα κι αυτός μέσα από εσάς. Μια μεγάλη αγκαλιά.</li>
+        <li><b>Harris Pressas</b>Ο συνάδελφος Αριστείδης ξεχώριζε για την ευγενική του φύση, την ηρεμία του και την αμείωτη διάθεση για προσφορά. Η πριν την ώρα του αναχώρηση αφήνει κενό. Μεγάλο! Να είστε καλά να τον θυμάστε και να τον τιμάτε!</li>
+      </ul>
+    </details>
+  </article>
+
+  <article class="post" id="tinoslive-video">
+    <p class="meta"><span class="who">Tinos LIVE TV</span><span>21 Οκτωβρίου 2026</span><span class="via">κοινοποίηση από Κατερίνα</span></p>
+    <h2 class="title">«Η Τήνος από ψηλά»: βίντεο-αφιέρωμα στη μνήμη του</h2>
+    <figure class="photo"><a href="https://www.youtube.com/watch?v=Md2WXGIWHWw" target="_blank" rel="noopener"><img src="photos/tinoslive_video.jpg" alt="Ο Αριστείδης Κοντογεώργης το 2005 στην παρουσίαση του βιβλίου του στο Βυζαντινό Μουσείο" loading="lazy"></a><figcaption>Από το βίντεο της παρουσίασης, Βυζαντινό Μουσείο Αθηνών, 6 Ιουνίου 2005 (πατήστε για το βίντεο στο YouTube).</figcaption></figure>
+    <blockquote>
+      <p>«Η Τήνος από ψηλά»: ο Αριστείδης Κοντογεώργης, το 2005, στην παρουσίαση του βιβλίου του στο Βυζαντινό Μουσείο της Αθήνας. Ένας φίλος του μάς έστειλε το βίντεο «στη μνήμη του αγαπημένου του φίλου». Το μοιραζόμαστε κι εμείς, ως ελάχιστο φόρο τιμής σε έναν άνθρωπο που έδειξε την Τήνο μας από ψηλά. Καλό ταξίδι, Αριστείδη.</p>
+    </blockquote>
+    <p class="note">Το βίντεο έστειλε ο Μπάμπης Κουλούρας. Άρθρο: «“Η Τήνος από ψηλά”: ο Αριστείδης Κοντογεώργης παρουσιάζει το βιβλίο του στο Βυζαντινό Μουσείο» (tinoslive.tv, 21.10.2026).</p>
+    <p class="count">23 αντιδράσεις · 3 σχόλια · 2 κοινοποιήσεις</p>
+    <details class="comments" open>
+      <summary>Σχόλια (1)</summary>
+      <ul>
+        <li><b>Βλάσσης Λεβαντίνος</b>Θερμά συλλυπητήρια.</li>
+      </ul>
+    </details>
+  </article>
+
+  <article class="post" id="funeral">
+    <p class="meta"><span class="who">Tinos LIVE TV · Tinos Today</span><span>21–22 Οκτωβρίου 2026</span><span class="via">κοινοποίηση από Κατερίνα και Ευαγγελία</span></p>
+    <h2 class="title">Το τελευταίο αντίο: Σάββατο 24 Οκτωβρίου, στη 1 το μεσημέρι</h2>
+    <div class="photos two"><figure class="photo"><img src="photos/tinoslive_funeral.jpg" alt="Η αγγελία της εξοδίου ακολουθίας από το Tinos LIVE TV" loading="lazy"><figcaption>Tinos LIVE TV, 21.10.2026</figcaption></figure><figure class="photo"><img src="photos/tinostoday_funeral.png" alt="Η αγγελία της εξοδίου ακολουθίας από το Tinos Today" loading="lazy"><figcaption>Tinos Today, 22.10.2026</figcaption></figure></div>
+    <blockquote>
+      <p><b>Tinos LIVE TV:</b> Το Σάββατο 24 Οκτωβρίου, στη 1 το μεσημέρι, στον Ιερό Ναό Αγίου Ελευθερίου, η Τήνος λέει το τελευταίο αντίο στον Αριστείδη Κοντογεώργη. Ο φωτογράφος που έδειξε το νησί μας «από ψηλά» και μέσα από το υπέρυθρο φιλμ γυρίζει στον τόπο του, για να αναπαυθεί στη γη που τόσο αγάπησε. Θερμά συλλυπητήρια στην οικογένεια και στους οικείους του. Καλό ταξίδι, Αριστείδη.</p>
+      <p><b>Tinos Today:</b> Η εξόδιος ακολουθία του Αριστείδη Κοντογεώργη θα τελεστεί το Σάββατο, στις 13:00, στον Ιερό Ναό Αγίου Ελευθερίου, στην πόλη της Τήνου. Συγγενείς, φίλοι και άνθρωποι που τον γνώρισαν μέσα από την προσωπική, καλλιτεχνική και επαγγελματική του διαδρομή θα έχουν την ευκαιρία να τον αποχαιρετήσουν για τελευταία φορά. Ο Αριστείδης Κοντογεώργης αφήνει πίσω του το έργο και τη δημιουργική του παρακαταθήκη, καθώς και τις αναμνήσεις που μοιράστηκε με τους ανθρώπους του τόπου του.</p>
+    </blockquote>
+    <p class="count">Tinos LIVE TV: 103 αντιδράσεις · 9 σχόλια · 11 κοινοποιήσεις — Tinos Today: 25 αντιδράσεις στην κοινοποίηση της Κατερίνας</p>
+    <details class="comments">
+      <summary>Σχόλια (7)</summary>
+      <ul>
+        <li><b>Mary Vergopoulou</b>Τα πιο θερμά μου συλλυπητήρια στην οικογένειά του και κυρίως στη γυναίκα του Ελένη. Παλιά μου φίλη και καλή συνάδελφο.</li>
+        <li><b>Λυμπέρης Αννούσης</b>Τα θερμά μου συλλυπητήρια στην οικογένεια. Καλό παράδεισο να έχει.</li>
+        <li><b>Γιάννης Αντίνοος Παλαμάρης</b>Ο Θεός να αναπαύσει την ψυχούλα του. Τα θερμά συλλυπητήρια στους οικείους του!!</li>
+        <li><b>Μάνθος Βίλλας</b>Αιώνια η μνήμη του.</li>
+        <li><b>Antonios Foskolos</b>Θερμά συλλυπητήρια στους δικούς του.</li>
+        <li><b>Mary Hanoussi</b>Δεν υπάρχουν λόγια.</li>
+        <li><b>Maria Kalamari</b>Θερμά συλλυπητήρια στους δικούς του.</li>
+      </ul>
+    </details>
+  </article>
+
+  <article class="post" id="armaos">
+    <p class="meta"><span class="who">Παντελής Αρμάος</span><span>22 Οκτωβρίου 2026</span><span class="via">κοινοποίηση από Ευαγγελία</span></p>
+    <h2 class="title">«Φίλε Αριστείδη, με βαθιά θλίψη σε αποχαιρετώ»</h2>
+    <div class="photos two"><figure class="photo"><img src="photos/armaos1.jpg" alt="Φωτογραφία από την ανάρτηση του Παντελή Αρμάου" loading="lazy"></figure><figure class="photo"><img src="photos/armaos2.jpg" alt="Δεύτερη φωτογραφία από την ανάρτηση του Παντελή Αρμάου" loading="lazy"></figure></div>
+    <blockquote>
+      <p>Φίλε Αριστείδη, με βαθιά θλίψη σε αποχαιρετώ. Μου είναι δύσκολο να καταλάβω και να πιστέψω την ξαφνική αναχώρησή σου, «για μακρινά ταξίδια μόνος σου», κατά την έκφραση ενημέρωσής μου από την αγαπημένη σου σύζυγο και εκλεκτή φίλη και συνάδελφό μου στο ΥΠΕΘΟ, Ελένη Δαγρέ.</p>
+      <p>Σαν… χθες ήταν που σε γνώρισα, συμπατριώτη, στις επισκέψεις σου στην Ελένη στο Υπουργείο πριν από πολλά χρόνια. Έκτοτε η φιλία μας γνήσια, σταθερή και ειλικρινής, και μετά την αφυπηρέτησή μου και την αυτοδιοικητική ενασχόλησή μου την τελευταία 15ετία και εγκατάστασή μου στο νησί, πιο δυνατή, με συχνότερη εκ του σύνεγγυς επικοινωνία.</p>
+      <p>Αγαπητέ Αριστείδη, η Τήνος θα σε θυμάται για την πλούσια προσφορά σου στον πολιτισμό, στην αποτύπωση της γνήσιας και αυθεντικής εικόνας της (που σταδιακά και σταθερά χάνεται), με τα τόσα λευκώματα που εκπόνησες, και την προβολή της στα πέρατα του κόσμου (Κίνα, Ουκρανία κ.λπ.).</p>
+      <p>Σ’ ευχαριστώ, φίλε, για ό,τι έκανες για τον τόπο μας, με πράξεις και δημιουργικές δράσεις, με ταπεινότητα και ανιδιοτέλεια.</p>
+      <p>Μας έχει συγκλονίσει η απρόσμενη φυγή σου, ενώ είχαμε συνεννοηθεί να βρεθούμε μετά την καλοκαιρινή αιχμή. Έτσι όπως άλλωστε επιδιώκαμε και πραγματοποιούσαμε, σε αραιά χρονικά διαστήματα, με γόνιμες συζητήσεις, ανταλλαγές απόψεων και διαπιστώσεων για διάφορα θέματα του νησιού μας, για χαρές, λύπες, αχάριστες και υποκριτικές συμπεριφορές!</p>
+      <p>Αριστείδη, θα σε θυμάμαι με αγάπη και εκτίμηση για την καλοσύνη σου, τον μειλίχιο χαρακτήρα σου, την ειλικρίνειά σου.</p>
+      <p>Αγαπητή Ελένη, φίλη και συναδέλφισσα, από καρδιάς τις ευχές μας σε σένα και στα κορίτσια σας για κουράγιο και δύναμη για την απώλεια του Αριστείδη.</p>
+      <p>Φίλε Αριστείδη, καλό κατευόδιο, καλή ανάπαυση.</p>
+    </blockquote>
+    <p class="count">103 αντιδράσεις · 8 σχόλια · 5 κοινοποιήσεις</p>
+    <details class="comments">
+      <summary>Σχόλια (8)</summary>
+      <ul>
+        <li><b>Mary Vergopoulou</b>Γαμώτο. Τα πιο ειλικρινή μου συλλυπητήρια στην Ελένη και τα κορίτσια τους. Πόσες συζητήσεις κάναμε, τότε, με το Ελενάκι για τα αγόρια μας. Είχαν και πρωτότυπα ονόματα... Αριστείδης, Βαρθολομαίος. Θυμάσαι Παντελή; Δημητρούλι; Εσείς τα ζήσατε από κοντά. Μεγάλες οι απώλειες.</li>
+        <li class="reply"><b>Eleni Dagre</b>Και έφυγαν νικημένοι από τον ίδιο εχθρό... Πόσες φορές δεν σκέφτηκα τον Βαρθολομαίο αυτές τις μέρες στο νοσοκομείο. Καπετάνιοι και οι δύο, που δεν άντεξαν στις φουρτούνες...</li>
+        <li class="reply"><b>Mary Vergopoulou</b>Αχ βρε Ελενάκι, τι να πω τέτοιες ώρες. Θα σε πάρω τηλέφωνο όταν περάσει η μεγάλη μπόρα. Οι σκέψεις μου κοντά σας. Έχουμε ζήσει τόσα...</li>
+        <li><b>Anthi Pateraki</b>Ο ένας νεανικός φίλος, η άλλη φίλη και συνάδελφος. Δεν αρκούν τα λόγια να περιγράψουν το σοκ που νιώσαμε. Κουράγιο στην Ελένη και στις νεαρές γιατρίνες!!!</li>
+        <li><b>Ρίζου Δήμητρα</b>Πω πω... κι εμένα σαν χτες μου φαίνεται που ερχόταν στο γραφείο στην Ελένη. Καλό του ταξίδι, και συλλυπητήρια στην Ελένη και τα κορίτσια τους.</li>
+        <li><b>Τούλα Αντωνίου</b>Καλό ταξίδι στον Αριστείδη, καλό παράδεισο. Πολλά συλλυπητήρια στην αγαπημένη Ελένη Δαγρέ.</li>
+        <li><b>Tonia Rentzi</b>Τα συλλυπητήριά μου Ελένη μου. Καλό ταξίδι. Αιωνία του η μνήμη.</li>
+        <li><b>Νίκος Συρμαλένιος</b>Θερμά συλλυπητήρια στην οικογένεια!!!</li>
+      </ul>
+    </details>
+  </article>
+
+  <article class="post" id="itip">
+    <p class="meta"><span class="who">Ίδρυμα Τηνιακού Πολιτισμού</span><span>22 Οκτωβρίου 2026</span><span class="via">itip.gr · μέσω Tinos LIVE TV, κοινοποίηση από Κατερίνα</span></p>
+    <h2 class="title">«Λόγοι μνήμης και ευγνωμοσύνης σε δύο δημιουργούς»</h2>
+    <figure class="photo"><img src="photos/tinoslive_itip.jpg" alt="Η κάρτα του Tinos LIVE TV για τον Χρήστο Σανταμούρη και τον Αριστείδη Κοντογεώργη" loading="lazy"></figure>
+    <blockquote>
+      <p>Στο Ίδρυμα Τηνιακού Πολιτισμού η απώλεια ενός ντόπιου καλλιτέχνη και συνεργάτη του Ιδρύματος προκαλεί σε όλους εμάς, το Διοικητικό Συμβούλιο και το Προσωπικό του, διπλή θλίψη: και για τον άνθρωπο που αποχωριζόμαστε και για τον συνεργάτη και βοηθό που αποτελούσε και ελπίζουμε να συνεχίσει να αποτελεί πηγή έμπνευσης. Και ο εφετινός Οκτώβρης ήταν ιδιαιτέρως σκληρός για την οικογένεια των εικαστικών της Τήνου, αφού θρηνεί την απώλεια δύο καταξιωμένων μελών της: του Χρήστου Σανταμούρη και του Αριστείδη Κοντογιώργη.</p>
+      <p>Ο Αριστείδης Κοντογεώργης γεννήθηκε στην Τήνο το 1960. Σπούδασε Καλές Τέχνες στο Northern Illinois University στις Η.Π.Α., καθώς και Ιστορία της Τέχνης και Πολιτικές Επιστήμες. Ήταν κάτοχος Διδακτορικού Διπλώματος στην Τεχνική και Διαχείριση των Εφαρμοσμένων Τεχνών. Δίδαξε στο Τμήμα Φωτογραφίας και Οπτικοακουστικών Τεχνών του ΤΕΙ Αθήνας από το 1989, και στη συνέχεια ως Αναπληρωτής Καθηγητής στο αντίστοιχο τμήμα του Πα.Δ.Α. Έχει πραγματοποιήσει τριάντα ατομικές εκθέσεις φωτογραφίας στην Ελλάδα και το εξωτερικό και έχει δεκάδες συμμετοχές σε ομαδικές εκθέσεις στο εξωτερικό. Έχουν εκδοθεί είκοσι τέσσερα βιβλία και λευκώματά του και έχει συγγράψει πολυάριθμα άρθρα σε επιστημονικά περιοδικά. Ήταν μέλος του Επιμελητηρίου Εικαστικών Τεχνών Ελλάδος από το 1985, Πρόεδρος του Δ.Σ. της Ελληνικής Φωτογραφικής Εταιρείας από το 2005 και Πρόεδρος της Διεθνούς Ομοσπονδίας Φωτογραφικών Φεστιβάλ (IPFF) από το 2009.</p>
+      <p>Η συνεργασία του με το Ίδρυμα Τηνιακού Πολιτισμού ξεκίνησε από τα πρώτα χρόνια ίδρυσής του, με σειρά συνεδρίων, εκθέσεων και εκδόσεων. Το 2003 διοργάνωσε στο Ι.ΤΗ.Π., σε συνεργασία με την Ελληνική Φωτογραφική Εταιρεία, διεθνή συνάντηση φωτογράφων με θέμα την ιστορική, εθνογραφική και καλλιτεχνική φωτογραφία στην Ελλάδα του 20ού αιώνα, με δίγλωσση έκδοση των πρακτικών, έκθεση ελληνικής φωτογραφίας και φωτογράφηση της Τήνου. Το 2006 δάνεισε από το αρχείο του φωτογραφίες-καρτ ποστάλ των αφών Κολιού των αρχών του 20ού αιώνα, στο πλαίσιο της έκθεσης «Η Αφύπνιση». Το 2009 επιμελήθηκε την έκθεση «Η Ελληνική Φωτογραφία μέσα από το αρχείο της Ελληνικής Φωτογραφικής Εταιρείας» και τον κατάλογο που τη συνόδεψε. Το 2010 εξέθεσε 30 ασπρόμαυρες φωτογραφίες περιστεριώνων της Τήνου με τίτλο «Τήνος – Περιστεριώνες». Μία από αυτές δωρήθηκε στο Ι.ΤΗ.Π. και εκτίθεται στον 1ο όροφο, στο πλαίσιο της έκθεσης «Η Συνέχεια…». Το 2011 επιμελήθηκε την οργάνωση και υλοποίηση στο Ι.ΤΗ.Π. της έκθεσης φωτογραφίας έξι Κινέζων φωτογράφων «Memory of Saghay, China».</p>
+      <p>Ο Αριστείδης Κοντογεώργης δώρισε στο Ι.ΤΗ.Π. τη φωτογραφία «Εγκαταλειμμένος Περιστεριώνας» (2014), η οποία εκτίθεται επίσης στον 1ο όροφο, στο πλαίσιο της έκθεσης «Η Συνέχεια…». Ανταποκρινόταν δε σε κάθε αίτημά μας για χρήση φωτογραφιών του με εικόνες της Τήνου, και με ιδιαίτερη φροντίδα φιλοξενούσε καλλιτέχνες και επιμελητές εκθέσεων του Ιδρύματος.</p>
+      <p>Για τους δύο αυτούς εικαστικούς εκφράζουμε τη βαθιά μας ευγνωμοσύνη για την πολυετή και πολύτιμη συνεργασία μας. Προσευχόμαστε ο Κύριος να αναπαύει τις ψυχές τους και να χαρίζει στις οικογένειές τους την εξ ύψους παρηγορία.</p>
+    </blockquote>
+    <div class="photos two"><figure class="photo"><img src="photos/itip_anemomylos.jpg" alt="Η Τήνος με τον φακό του Αριστείδη Κοντογεώργη, από το itip.gr" loading="lazy"><figcaption>Η Τήνος με τον φακό του. Πηγή: itip.gr</figcaption></figure><figure class="photo"><img src="photos/itip_synexeia.jpg" alt="Φωτογραφία του στη μόνιμη έκθεση «Η Συνέχεια…» του Ιδρύματος Τηνιακού Πολιτισμού" loading="lazy"><figcaption>Φωτογραφία του στη μόνιμη έκθεση «Η Συνέχεια…». Πηγή: itip.gr</figcaption></figure></div>
+    <p class="note">Το κείμενο αφορά και τον χαράκτη Χρήστο Σανταμούρη (1948–2026), που κηδεύτηκε στη Χώρα στις 6 Οκτωβρίου. Εδώ κρατήθηκαν η εισαγωγή, το μέρος για τον Αριστείδη και η κατακλείδα. Πλήρες κείμενο: «Λόγοι μνήμης και ευγνωμοσύνης σε δύο δημιουργούς» (itip.gr, 22.10.2026). Παρουσίαση από το Tinos LIVE TV στις 22.10.2026.</p>
+    <p class="count">33 αντιδράσεις · 3 σχόλια · 8 κοινοποιήσεις (ανάρτηση Tinos LIVE TV)</p>
+    <details class="comments" open>
+      <summary>Σχόλια (2)</summary>
+      <ul>
+        <li><b>Αντώνης Ασημομύτης</b>Καλοί μου φίλοι και οι δύο, αιωνία η μνήμη τους.</li>
+        <li><b>Maria Piliotopoulou</b>Με τον Αριστείδη είμασταν συμμαθητές και με τον Χρήστο γείτονες!!! Αιώνια τους η μνήμη!!</li>
+      </ul>
+    </details>
+  </article>
+
+  <article class="post" id="katerina">
+    <p class="meta"><span class="who">Κατερίνα Κοντογεώργη</span><span>23 Οκτωβρίου 2026</span></p>
+    <h2 class="title">«Τον καλύτερο μπαμπάκα του κόσμου»</h2>
+    <figure class="photo"><img src="photos/katerina.jpg" alt="Η φωτογραφία της ανάρτησης της Κατερίνας" loading="lazy"></figure>
+    <blockquote>
+      <p>Αύριο Σάββατο 24/10 στην Τήνο αποχαιρετάμε για το τελευταίο του, μακρινό, ταξίδι τον πολυλατρεμένο μου μπαμπά, τον καλύτερο μπαμπάκα του κόσμου. Τον αγαπημένο σε όλους μας Αριστείδη Κοντογεώργη. Άνθρωπο με πολλές αξίες, ήθος, ευγένεια, ηρεμία, πρόθυμο να ακούσει και να βοηθήσει τους πάντες. Αναντικατάστατος σε πολλούς τομείς, που θα λείψει σε όλους μας.</p>
+    </blockquote>
+    <p class="count">98 αντιδράσεις · 38 σχόλια</p>
+    <details class="comments">
+      <summary>Σχόλια (37)</summary>
+      <ul>
+        <li><b>Maria Sotirudi Atsalaki</b>Τα θερμά μου συλλυπητήρια, καλό παράδεισο.</li>
+        <li><b>Maia Andonova</b>Моите дълбоки съболезнования, Катерина! Мир на душата му! <i>(Τα βαθιά μου συλλυπητήρια, Κατερίνα! Ειρήνη στην ψυχή του!)</i></li>
+        <li><b>Gylian Halilov</b>Съболезнования на цялото семейство. <i>(Συλλυπητήρια σε όλη την οικογένεια.)</i></li>
+        <li><b>Spartakos Iordanidis</b>Τα συλλυπητήριά μου. Καλό Παράδεισο.</li>
+        <li><b>Ioannis Chatzigeorgiou Charoula Agapiou</b>Συλλυπητήρια. Καλό ταξίδι στο φως.</li>
+        <li><b>Themis Rodamitis</b>Ευγενής... συμπονετικός... Ένα από τα πιο ωραία χαμόγελα του κόσμου. Δεν μπορώ να είμαι στον αποχαιρετισμό καθώς είμαι σε ανάρρωση. Η σκέψη μου στην Ελένη, την Κατερίνα, την Ευαγγελία...</li>
+        <li><b>Boyana Manchorova</b>Съболезнования, Кате! <i>(Συλλυπητήρια, Κάτε!)</i></li>
+        <li><b>Maria Kazamia</b>Τα συλλυπητήριά μας.</li>
+        <li><b>Nikos Delis</b>Θερμά συλλυπητήρια.</li>
+        <li><b>Eliza Mar</b>Συλλυπητήρια... να τον θυμάσαι γλυκά.</li>
+        <li><b>Stella Katsiada</b>Τα ειλικρινή μου συλλυπητήρια, Κατερινάκι.</li>
+        <li><b>Tawfik Youssef</b>Every word is true. He will be always remembered as a man of a big heart, and he will be missed everywhere he used to be.</li>
+        <li><b>Marie Devereux Curran</b>I am so incredibly sad for all of you. Your dad was such a gentle, kind person. Bob and I have said several times this week that he was just so welcoming to us. And his smile, it was the absolute best. All of our love to you.</li>
+        <li><b>Sofia Stavroulaki</b>Λυπάμαι πολύ Κατερίνα μου.</li>
+        <li><b>Νίκη Κρίκη</b>Ο Θεός να τον αναπαύσει.</li>
+        <li><b>Γιάννης Νικολόπουλος</b>Συλλυπητήρια.</li>
+        <li><b>Christina Bourbouli</b>Θερμά συλλυπητήρια Κατερίνα μου, να ζήσετε να τον θυμάστε με αγάπη.</li>
+        <li><b>Κωνσταντίνα Ματσούκα Νικολοπούλου</b>Συλλυπητήρια Κατερίνα.</li>
+        <li><b>Andreas Metenidis</b>Τα συλλυπητήριά μου Κατερίνα!</li>
+        <li><b>Irini Koukiotou</b>Θερμά συλλυπητήρια!!!</li>
+        <li><b>Ειρήνη Χαρδαλή</b>Ειλικρινή συλλυπητήρια Κατερίνα και Ευαγγελία. Καλό κατευόδιο στον πατέρα.</li>
+        <li><b>Ιω Ανν</b>Θερμά συλλυπητήρια.</li>
+        <li><b>Eleni Petridou</b>Θα ’μαστε όλοι μαζί σας.</li>
+        <li><b>Ελευθερία Αγγέλη</b>Θερμά συλλυπητήρια. Καλό Παράδεισο.</li>
+        <li><b>Alexios Pantelidis</b>Τα θερμά μου συλλυπητήρια Κατερίνα μου!</li>
+        <li><b>Anastasia Tsolaki</b>Τα συλλυπητήριά μου. Καλό Παράδεισο.</li>
+        <li><b>Ilias Moustakis</b>Πολλά συλλυπητήρια...</li>
+        <li><b>Tina Mavromara</b>Ο μπαμπάς είναι ένας θησαυρός που θα κουβαλάτε πάντα μέσα σας. Θα σας δίνει δύναμη, θα σας πλημμυρίζει αγάπη και γαλήνη. Είστε τυχερές που είχατε πατέρα τον Αριστείδη, και εμείς τυχεροί όσοι τον γνωρίσαμε, τον αγαπήσαμε και μοιραστήκαμε μαζί του ιδέες και συναισθήματα. Θα είμαστε αύριο κοντά σας.</li>
+        <li><b>Μαρία Τενεκετζή</b>Θερμά συλλυπητήρια, Κατερίνα! Τα λόγια είναι φτωχά τέτοιες στιγμές. Καλό παράδεισο να έχει ο πατερούλης σου…</li>
+        <li><b>Georgia Pataridou</b>Θερμά συλλυπητήρια Κατερίνα, να τον θυμάστε πάντα!</li>
+        <li><b>Σίντι Σίντι</b>Τα θερμά μου συλλυπητήρια Κατερίνα μου!! Να είστε πάντα καλά και να τον θυμάστε με αγάπη.</li>
+        <li><b>Elina Stefanou</b>Τα ειλικρινή μας συλλυπητήρια... Καλό Παράδεισο!!!</li>
+        <li><b>Θουκιδίδης Σακαρέλος</b>Τα ειλικρινή μου συλλυπητήρια.</li>
+        <li><b>Bob Curran</b>I offer my deepest condolences. I feel fortunate to have known him for the short time that I did. I will miss him greatly.</li>
+        <li><b>Anna Maria Roussou</b>Τα θερμά μου συλλυπητήρια! Καλό παράδεισο. Κατερίνα, Ευαγγελία, να ζήσετε να τον θυμάστε. Θα σας προσέχει από εκεί ψηλά και θα είναι δίπλα σας, σαν φύλακας άγγελος.</li>
+        <li><b>Konstantina Katsika</b>Θερμά συλλυπητήρια.... Να ζήσετε να τον θυμόμαστε πάντα... κουράγιο και δύναμη.</li>
+        <li><b>Μάγδα-Βασίλης Πιπέρογλου-Μόρφη</b>Θερμά συλλυπητήρια.</li>
+      </ul>
+    </details>
+  </article>
+
+  <article class="post" id="syllogos">
+    <p class="meta"><span class="who">Tinos Today</span><span>23 Οκτωβρίου 2026</span><span class="via">κοινοποίηση από Κατερίνα και Ευαγγελία</span></p>
+    <h2 class="title">Βαθύτατη θλίψη για τον Σύλλογο Καλλιτεχνών Εικαστικών Τήνου</h2>
+    <figure class="photo"><img src="photos/syllogos.png" alt="Η εικόνα του άρθρου του Tinos Today για τον Σύλλογο Καλλιτεχνών" loading="lazy"></figure>
+    <blockquote>
+      <p>Ο Αριστείδης, προσφιλής με εκείνη την ιδιαίτερη, ζεστή ματιά, ταξιδιάρης αγκαλιά με το φακό του, ωραίος οικογενειάρχης, καλοσυνάτος, ιδιαίτερα αγαπητός στην κοινωνία της Τήνου, δημιουργικός μέσα και έξω από τα όριά της.</p>
+    </blockquote>
+    <p class="note">Άρθρο: «Βαθύτατη θλίψη για τον Σύλλογο Καλλιτεχνών Εικαστικών Τήνου» (tinostoday.gr, 23.10.2026).</p>
+    <p class="count">Κοινοποίηση της Κατερίνας: 13 αντιδράσεις · της Ευαγγελίας: 10</p>
+  </article>
+
+  <article class="post" id="emporikos">
+    <p class="meta"><span class="who">Εμποροεπαγγελματικός &amp; Βιοτεχνικός Σύλλογος Τήνου</span><span>23 Οκτωβρίου 2026</span><span class="via">μέσω Tinos Today · κοινοποίηση από Κατερίνα και Ευαγγελία</span></p>
+    <h2 class="title">«Αριστείδη, σ’ ευχαριστούμε…»</h2>
+    <figure class="photo"><img src="photos/emporikos.png" alt="Η εικόνα της ανάρτησης του Tinos Today για τον Εμποροεπαγγελματικό Σύλλογο" loading="lazy"></figure>
+    <blockquote>
+      <p>Για την ανιδιοτελή αγάπη που είχες για το νησί μας.</p>
+      <p>Γιατί μέσα από την ξεχωριστή ματιά σου και το αστείρευτο ταλέντο σου γνώρισες το νησί μας και σε αυτούς που δεν ήξεραν την πραγματική Τήνο, την Τήνο του φωτός, της τέχνης, του πολιτισμού, των περιστεριώνων, της θάλασσας, των ανθρώπων της.</p>
+      <p>Για τις γνώσεις, τις εμπειρίες και την ανιδιοτελή υποστήριξη που πρόσφερες απλόχερα στους φοιτητές σου.</p>
+      <p>Για την εμπιστοσύνη που έδειξες στον Σύλλογό μας, παραχωρώντας τα πνευματικά δικαιώματα πολλών φωτογραφιών σου και δίνοντάς μας το δικαίωμα να τις χρησιμοποιούμε με σκοπό την ανάδειξη και την προβολή του νησιού μας.</p>
+      <p>Για την πολύτιμη βοήθειά σου όταν ο Εμποροεπαγγελματικός &amp; Βιοτεχνικός Σύλλογος Τήνου μαζί με τον Δήμο Τήνου παρουσίασε τον Μάρτιο του 2012 την Τήνο στο Νικολάγιεφ και στην Οδησσό της Ουκρανίας.</p>
+      <p>Για την πολύτιμη αρωγή σου στη διοργάνωση του Tinos Running Experience.</p>
+      <p>Θερμά συλλυπητήρια στην οικογένειά σου. Καλό ταξίδι!!!</p>
+      <p>Με εκτίμηση,<br>Το Δ.Σ. του Εμποροεπαγγελματικού &amp; Βιοτεχνικού Συλλόγου Τήνου</p>
+    </blockquote>
+    <div class="photos grid">
+      <figure class="photo"><img src="photos/emporikos_tt_276.jpg" alt="Από την έκθεση παρουσίασης της Τήνου στο Νικολάγιεφ, Μάρτιος 2012" loading="lazy"></figure>
+      <figure class="photo"><img src="photos/emporikos_tt_062.jpg" alt="Από την έκθεση στο Νικολάγιεφ, 2012" loading="lazy"></figure>
+      <figure class="photo"><img src="photos/emporikos_tt_068.jpg" alt="Από την έκθεση στο Νικολάγιεφ, 2012" loading="lazy"></figure>
+      <figure class="photo"><img src="photos/emporikos_tt_075.jpg" alt="Από την έκθεση στο Νικολάγιεφ, 2012" loading="lazy"></figure>
+      <figure class="photo"><img src="photos/emporikos_tt_082.jpg" alt="Από την έκθεση στο Νικολάγιεφ, 2012" loading="lazy"></figure>
+      <figure class="photo"><img src="photos/emporikos_tt_256.jpg" alt="Από την έκθεση στο Νικολάγιεφ, 2012" loading="lazy"></figure>
+      <figure class="photo"><img src="photos/emporikos_tt_257.jpg" alt="Από την έκθεση στο Νικολάγιεφ, 2012" loading="lazy"></figure>
+    </div>
+    <p class="note">Οι φωτογραφίες που συνοδεύουν το δελτίο τύπου είναι από την έκθεση παρουσίασης της Τήνου στο Νικολάγιεφ της Ουκρανίας, τον Μάρτιο του 2012. Μαζί του ο τότε δήμαρχος του Νικολάγιεφ, Βλαντιμίρ Τσάικα. Άρθρο: «Εμποροεπαγγελματικός Σύλλογος Τήνου: Αριστείδη σ’ ευχαριστούμε…» (tinostoday.gr, 23.10.2026).</p>
+    <p class="count">40 αντιδράσεις · 9 κοινοποιήσεις</p>
+  </article>
+
+  <article class="post" id="krontiras">
+    <p class="meta"><span class="who">Παναγιώτης Κροντηράς, Δήμαρχος Τήνου</span><span>23 Οκτωβρίου 2026</span><span class="via">σελίδα Δήμου Τήνου · κοινοποίηση από Κατερίνα και Ευαγγελία</span></p>
+    <h2 class="title">«Αγαπημένε μου φίλε Αριστείδη»</h2>
+    <figure class="photo"><img src="photos/krontiras.png" alt="Η εικόνα της ανάρτησης του Δήμου Τήνου" loading="lazy"></figure>
+    <blockquote>
+      <p>Αγαπημένε μου φίλε Αριστείδη,</p>
+      <p>Σήμερα, η Τήνος που τόσο αγάπησες και που άφησε ανεξίτηλο το αποτύπωμά της μέσα σου, είναι πιο φτωχή από την απουσία σου. Και για μένα προσωπικά, η μέρα αυτή είναι από τις πιο δύσκολες της ζωής μου, καθώς αποχαιρετώ όχι απλώς έναν κορυφαίο επιστήμονα και διεθνή καλλιτέχνη, αλλά έναν αδελφικό φίλο, έναν άνθρωπο της καρδιάς μου και ένα πιστό συνοδοιπόρο.</p>
+      <p>Θυμάμαι τις ατέλειωτες συζητήσεις μας, από την εποχή του Δήμου Εξωμβούργου μέχρι και τον σημερινό ενιαίο Δήμο Τήνου. Μοιραζόμασταν το ίδιο πάθος και το ίδιο όραμα για το νησί μας. Σε κάθε μας βήμα, είχα την τύχη να έχω δίπλα μου τη διορατικότητα, την καθαρή σου σκέψη και την ανιδιοτελή σου αγάπη για τον τόπο μας. Ήσουν ο άνθρωπος που, με το διεθνές σου κύρος ως Πρόεδρος της Παγκόσμιας Ομοσπονδίας Φωτογραφικών Φεστιβάλ, κατάφερες να ανοίξεις πόρτες που έμοιαζαν κλειστές, οδηγώντας μας μέχρι την μακρινή Κίνα, για εκείνη την ιστορική αδελφοποίηση.</p>
+      <p>Για τον κόσμο ήσουν ο Δρ. Αριστείδης Κοντογεώργης. Ο σπουδαίος καθηγητής που από το 1989 γαλούχησε γενιές στο Τμήμα Φωτογραφίας του ΤΕΙ Αθήνας. Ο δημιουργός με τις 30 ατομικές εκθέσεις παγκοσμίως, τα 24 βιβλία και τη σπουδαία προσφορά στην Ελληνική Φωτογραφική Εταιρεία.</p>
+      <p>Για μένα, όμως, ήσουν ο Αριστείδης. Ο δικός μας άνθρωπος, γεννημένος εδώ το 1960, που δεν ξέχασε ποτέ τις ρίζες του. Μέσα από τον φακό σου, αποτύπωσες την τηνιακή ψυχή, το μοναδικό φως των χωριών μας και την ομορφιά των ανθρώπων μας, αφήνοντάς μας ως παρακαταθήκη τα υπέροχα φωτογραφικά σου λευκώματα και τις μοναδικές εκδοτικές περιηγήσεις στην τότε Δημοτική Επιχείρηση του Δήμου Εξωμβούργου.</p>
+      <p>Το κενό που αφήνεις στην ακαδημαϊκή κοινότητα και στην αγαπημένη μας Τήνο είναι δυσαναπλήρωτο. Η σκέψη μας αυτή την ώρα βρίσκεται κοντά στην οικογένειά σου και την μητέρα σου, στους οποίους εκφράζω τα πιο βαθιά και ειλικρινή μου συλλυπητήρια.</p>
+      <p>Φίλε μου ακριβέ, σε ευχαριστώ για όλα. Για τη φιλία σου, για την πίστη σου, για όσα προσέφερες στον τόπο μας. Το έργο σου και η θύμησή σου δεν θα σβήσουν ποτέ.</p>
+      <p>Καλό σου ταξίδι στο αιώνιο φως.</p>
+      <p>Παναγιώτης Κροντηράς<br>Δήμαρχος Τήνου</p>
+    </blockquote>
+    <p class="note">Δημοσιεύτηκε στη σελίδα «Δήμος Τήνου – Municipality of Tinos» και στο dimostinou.gr. Αναδημοσιεύτηκε από Tinos Today, Κυκλαδική, Tinosnews και Cyclades24.</p>
+    <figure class="photo"><img src="photos/tl_dimarxos-tinou-kontogeorgis-2009-slider.jpg" alt="Ο Παναγιώτης Κροντηράς και ο Αριστείδης Κοντογεώργης το 2009" loading="lazy"><figcaption>Ο δήμαρχος με τον Αριστείδη το 2009, από το άρθρο του Tinos LIVE TV.</figcaption></figure>
+    <p class="count">101 αντιδράσεις · 3 κοινοποιήσεις</p>
+  </article>
+
+  <article class="post" id="koulouras2">
+    <p class="meta"><span class="who">Μπάμπης Κουλούρας</span><span>24 Οκτωβρίου 2026</span><span class="via">με Κατερίνα Κοντογεώργη και 4 ακόμη</span></p>
+    <h2 class="title">«Σήμερα το μεσημέρι αποχαιρετάμε τον Αριστείδη Κοντογεώργη»</h2>
+    <figure class="photo"><a href="https://www.youtube.com/watch?v=Md2WXGIWHWw" target="_blank" rel="noopener"><img src="photos/koulouras2_yt.jpg" alt="Βίντεο: «Η Τήνος από ψηλά», παρουσίαση στο Βυζαντινό Μουσείο" loading="lazy"></a><figcaption>Βίντεο: «Η Τήνος από ψηλά», η παρουσίαση του βιβλίου στο Βυζαντινό Μουσείο Αθηνών, 6 Ιουνίου 2005 (YouTube, πατήστε για αναπαραγωγή). Ο ίδιος εμφανίζεται στο 53′54″.</figcaption></figure>
+    <blockquote>
+      <p>Σήμερα το μεσημέρι αποχαιρετάμε τον ΑΡΙΣΤΕΙΔΗ ΚΟΝΤΟΓΕΩΡΓΗ, έναν αληθινό ευπατρίδη σε κάθε έκφανση της ζωής, έναν Τήνιο Πανεπιστημιακό Καθηγητή Καλλιτέχνη, έναν απαράμιλλο δεξιοτέχνη της φωτογραφικής τέχνης, έναν ευγενή πολίτη, έναν υπέροχο φίλο που άφησε τα πιο φωτεινά ίχνη του στο πέρασμά του από τη ζωή. Γι’ αυτό και θα εξακολουθήσει να ζει στις πιο όμορφες αναμνήσεις μας, στην πιο τρυφερή γωνιά της καρδιάς μας... Η γυναίκα του και τα παιδιά του κληρονομούν την υπερηφάνεια και τον μέγα πλούτο της πολυσήμαντης, δημιουργικής του ζωής...</p>
+    </blockquote>
+    <p class="count">15 αντιδράσεις · 1 σχόλιο</p>
+    <details class="comments" open>
+      <summary>Σχόλια (1)</summary>
+      <ul>
+        <li><b>Έφη Χατζή</b>Ευχαριστούμε.</li>
+      </ul>
+    </details>
+  </article>
+
+  <article class="post" id="tinoslive2">
+    <p class="meta"><span class="who">Tinos LIVE TV</span><span>24 Οκτωβρίου 2026</span><span class="via">κοινοποίηση από Κατερίνα</span></p>
+    <h2 class="title">«Σήμερα το τελευταίο αντίο στον Αριστείδη Κοντογεώργη»</h2>
+    <figure class="photo"><img src="photos/tinoslive2.jpg" alt="Η εικόνα της ανάρτησης του Tinos LIVE TV για την ημέρα της κηδείας" loading="lazy"></figure>
+    <blockquote>
+      <p>Σήμερα, Σάββατο 24 Οκτωβρίου, στη 1 το μεσημέρι, στον Ιερό Ναό Αγίου Ελευθερίου στη Χώρα, η Τήνος αποχαιρετά τον φωτογράφο και καθηγητή που έδειξε το νησί μας «από ψηλά» και μέσα από το υπέρυθρο φιλμ. Μέσα στο άρθρο η διαδρομή του και όσα γράψαμε αυτές τις μέρες.</p>
+      <p>Ας είναι ελαφρύ το χώμα που θα τον σκεπάσει. Καλό ταξίδι, Αριστείδη.</p>
+    </blockquote>
+    <p class="count">44 αντιδράσεις · 6 κοινοποιήσεις</p>
+  </article>
+
+  <article class="post" id="deligianni">
+    <p class="meta"><span class="who">Νατάσα Δεληγιάννη Άσπρου</span><span>24 Οκτωβρίου 2026</span><span class="via">κοινοποίηση από Ευαγγελία</span></p>
+    <h2 class="title">«Ένας τέτοιος καλλιτέχνης δεν φεύγει ποτέ από τις καρδιές μας»</h2>
+    <div class="photos two"><figure class="photo"><img src="photos/deligianni1.jpg" alt="Φωτογραφία από την ανάρτηση της Νατάσας Δεληγιάννη" loading="lazy"></figure><figure class="photo"><img src="photos/deligianni2.jpg" alt="Δεύτερη φωτογραφία από την ανάρτηση της Νατάσας Δεληγιάννη" loading="lazy"></figure></div>
+    <blockquote>
+      <p>Σήμερα η Τήνος αποχαιρετά με θλίψη και βαθιά οδύνη ένα δικό της παιδί, τον Αριστείδη Κοντογεώργη, έναν καλλιτέχνη, φωτογράφο και ακαδημαϊκό που άφησε το δικό του αποτύπωμα στο νησί μας, στην Ελλάδα αλλά και σε διεθνές επίπεδο.</p>
+      <p>Τον Αριστείδη τον γνώρισα αρχικά μέσα από τα ζεστά λόγια του πατέρα μου, που μου μετέδωσε την αγάπη και την περηφάνια που ένιωθε για τον μαθητή του. Συμμαθητής με τον αδελφό μου σε εκείνη την περίφημη τάξη της γενιάς του 1960 που συνεχίζει να μετρά αβάσταχτες απώλειες!</p>
+      <p>Ο Αριστείδης άνοιξε τα δικά του φτερά και διέπρεψε και καταξιώθηκε στον τομέα του, σε εθνικό και διεθνές επίπεδο, αλλά πάντα δεν έπαψε να έχει στην καρδιά του τη γενέτειρα και τον τόπο καταγωγής του, την Τήνο, που κουβαλούσε σε όλες τις εκφάνσεις της ζωής του.</p>
+      <p>Αθεράπευτα Τηνιακός λοιπόν, καθήλωνε με τον φακό του, εκτός των άλλων, σκηνές του Τηνιακού τοπίου που μαγνήτιζαν το κοινό και προκαλούσαν έντονα συναισθήματα και δημιουργούσαν συγκλονιστικές εικόνες. Οι λήψεις του ήταν τόσο δυνατές, δημιουργικές και αποκαλυπτικές που τραβούσαν το βλέμμα και την προσοχή του θεατή. Αποτύπωνε την αλήθεια και την ομορφιά της στιγμής και μετέφερε στον θεατή τα δικά του συναισθήματα για τον τόπο του.</p>
+      <p>Κάπως έτσι λοιπόν μας δόθηκε η ευκαιρία να γνωριστούμε καλύτερα και να συνεργαστούμε στο διάστημα 2014 με 2019 που ήμουν Αντιδήμαρχος Τουρισμού στον Δήμο της Τήνου. Ήταν πάντα μέσα σε αυτούς που πρόσφεραν ανιδιοτελώς φωτογραφίες για την τουριστική προβολή του νησιού μας, και κάπως έτσι ήρθε η πρόταση να οργανώσουμε μια φωτογραφική έκθεση στα νησιά Ζουσάν, στο αρχιπέλαγος της Κίνας, το 2015. Εκτός της φωτογραφικής έκθεσης, είχε φροντίσει ώστε η Τήνος να είναι τιμώμενος προορισμός στο Παγκόσμιο τουριστικό συνέδριο που γινόταν εκείνο το διάστημα στην Κίνα.</p>
+      <p>Οι δυσκολίες ήταν πολλές, αλλά εκείνος τις ξεπέρασε και καταφέραμε να κάνουμε μια μοναδική συμμετοχή και μια έκθεση που μετέφερε τόσο μακριά τις ομορφιές του τόπου μας. Εκεί μου δόθηκε η ευκαιρία να γνωρίσω έναν άλλον Αριστείδη, έναν Αριστείδη που έκρυβε επιμελώς, εξαιτίας της σεμνότητάς του, καταξιωμένο σε διεθνές επίπεδο.</p>
+      <p>Θα θυμάμαι πάντα αυτή τη δράση που κάναμε μαζί, που με συγκλόνισε σαν άνθρωπο και ήταν για μένα μια μοναδική εμπειρία. Θα θυμάμαι όμως και την περηφάνια του, όχι για αυτά τα ίδια τα έργα του, αλλά για την προβολή της κάθε ομορφιάς του τόπου του.</p>
+      <p>Ένας τέτοιος καλλιτέχνης δεν φεύγει ποτέ από τις καρδιές μας, γιατί τα έργα του και οι εικόνες του παραμένουν μέσα στη σιωπή τους να μιλάνε για αυτόν.</p>
+      <p>Καλό ταξίδι στο φως Αριστείδη, στον Τηνιακό ορίζοντα που τον λάτρεψες, και εύχομαι δύναμη και παρηγοριά στην κα Ευαγγελία, στην Ελένη, στα κορίτσια σου, στην αδελφή σου και σε όσους σε αγάπησαν και αγάπησες.</p>
+    </blockquote>
+    <p class="note">Το κείμενο αναδημοσίευσε και το Tinos LIVE TV («Καλό ταξίδι στο φως», 24.10.2026).</p>
+    <p class="count">113 αντιδράσεις · 4 σχόλια · 5 κοινοποιήσεις</p>
+    <details class="comments" open>
+      <summary>Σχόλια (3)</summary>
+      <ul>
+        <li><b>Στέλλα Γκίζη</b>Αβάσταχτα λυπηρό, χάθηκαν τόσο πρόωρα τόσοι παλιοί συμμαθητές, φίλοι των παιδικών μας χρόνων. Αιωνία η μνήμη!</li>
+        <li><b>Chris Christodoulou</b>Αιωνία του η μνήμη!</li>
+        <li><b>Μαρουδιά Κατερίνα</b>Αιώνια του η μνήμη, καλό παράδεισο.</li>
+      </ul>
+    </details>
+  </article>
+
+  <article class="post" id="shares-evangelia">
+    <p class="meta"><span class="who">Σχόλια στις κοινοποιήσεις της Ευαγγελίας</span><span>20–24 Οκτωβρίου 2026</span></p>
+    <h2 class="title">Συλλυπητήρια προς την Ευαγγελία</h2>
+    <p class="note">Κάτω από τις αναρτήσεις που κοινοποίησε η Ευαγγελία στο προφίλ της, φίλοι της άφησαν τα δικά τους μηνύματα. Στην κοινοποίηση του Tinos Today (73 αντιδράσεις, 30 σχόλια):</p>
+    <details class="comments">
+      <summary>Σχόλια (30)</summary>
+      <ul>
+        <li><b>Lefteris Zemelis</b>Συλλυπητήρια...</li>
+        <li><b>Xrisina Pasxalidou</b>Ειλικρινά, θερμά συλλυπητήρια.</li>
+        <li><b>Tony Tsakos</b>Τα θερμά συλλυπητήριά μου.</li>
+        <li><b>Litsa Staurou</b>Κοριτσάκι μου, θερμά συλλυπητήρια! Να ζήσετε να τον θυμόσαστε.</li>
+        <li><b>Kiki Varvarigou</b>Θερμά συλλυπητήρια, πολύ στενοχωρέθηκα.</li>
+        <li><b>Θοδωρής Σπίνος</b>Συλλυπητήρια!!</li>
+        <li><b>Vaso Iakovaki</b>Θερμά συλλυπητήρια Ευαγγελία μου!! Πραγματικά λυπάμαι! Να είστε πάντα καλά να τον θυμάστε με αγάπη!! Πραγματικά πολύ κρίμα….</li>
+        <li><b>Giannis Papapanagiotou</b>Θερμά συλλυπητήρια!</li>
+        <li><b>Stefania Ntova</b>Ειλικρινά λυπάμαι πολύ Ευαγγελία μου... Τα θερμά μου συλλυπητήρια! Να ζήσετε να τον θυμόσαστε.... Καλό ταξίδι να έχει...</li>
+        <li><b>Katia Domali Karatzia</b>Αγαπημένη μου, καλό του ταξίδι….</li>
+        <li><b>Chrysanthi Sarantinou</b>Συλλυπητήρια Ευαγγελία.</li>
+        <li><b>Μελίνα Κλήμη</b>Θερμά συλλυπητήρια!!</li>
+        <li><b>Anna Pan</b>Ευαγγελία μου, τα ειλικρινή συλλυπητήριά μου. Να είστε καλά να τον θυμάστε και η ευχή του να σας συνοδεύει στη ζωή σας. Κουράγιο και δύναμη σε όλους σας.</li>
+        <li><b>Κατερίνα Γούναρη</b>Ευαγγελία μου γλυκιά, συλλυπητήρια για την απώλεια του μπαμπά σας! Ένας αξιόλογος άνθρωπος με αξιοπρέπεια, γεμάτος ευγένεια! Να είστε γερές να τον θυμόσαστε πάντα!</li>
+        <li><b>Evi Bka</b>Ευαγγελία μου, συλλυπητήρια, λυπάμαι πολύ, να είστε πάντα καλά να τον θυμόσαστε.</li>
+        <li><b>Stamatis Kozakis</b>Συλλυπητήρια Ευαγγελία!</li>
+        <li><b>Apostolis Foukas</b>Θερμά συλλυπητήρια!!</li>
+        <li><b>Vicky Skandalou</b>Θερμά συλλυπητήρια.</li>
+        <li><b>Nikos Delis</b>Θερμά συλλυπητήρια.</li>
+        <li><b>Τζούλια Ευστρατίου</b>Καλό πέρασμα στο φως να έχει, κορίτσι μου, καλή δύναμη!!!</li>
+        <li><b>Katerina Kalogeraki</b>Τα ειλικρινή μου συλλυπητήρια κορίτσι μου! Να έχετε την ευχή του!</li>
+        <li><b>Nikos Kyritsis</b>Θερμά συλλυπητήρια!</li>
+        <li><b>Πόπη Γκύλα</b>Θερμά συλλυπητήρια....</li>
+        <li><b>Γιώτα Μπράνη</b>Θερμά συλλυπητήρια, καλό κουράγιο Ευαγγελία.</li>
+        <li><b>Jenie Mpougiourh Tritzali</b>Τα θερμά μου συλλυπητήρια!!!</li>
+        <li><b>Χρύσα Ζάγκα</b>Συλλυπητήρια Ευαγγελία.</li>
+        <li><b>Ignatia Trahilou</b>Συλλυπητήρια...</li>
+        <li><b>Kalliopi Pappa</b>Συλλυπητήρια Ευαγγελία μου.</li>
+        <li><b>Eleni Iliadi</b>Θερμά συλλυπητήρια Ευαγγελία μου! Καλό του ταξίδι.</li>
+        <li><b>Elena Angelopoulou</b>Τα θερμά μου συλλυπητήρια....</li>
+      </ul>
+    </details>
+    <p class="note">Στις υπόλοιπες κοινοποιήσεις της: <b>Αγνή Δεσύπρη</b> (Tinos LIVE TV): «Συλλυπητήρια κορίτσι μου. Η αγάπη του να σας ακολουθεί πάντα.» · <b>Eva Pantazatou</b> (Θέμης Ροδαμίτης): «Συλλυπητήρια Ευαγγελία! Ο Θεός να αναπαύσει την ψυχή του!» · <b>Marialena Margaroni</b> (Χρήστος Πιπίνης): «Λυπάμαι ειλικρινά.... στέλνω μια μεγάλη αγκαλιά....»</p>
+  </article>
+
+  <article class="post" id="shares-katerina">
+    <p class="meta"><span class="who">Σχόλια στις κοινοποιήσεις της Κατερίνας</span><span>20–24 Οκτωβρίου 2026</span></p>
+    <h2 class="title">Συλλυπητήρια προς την Κατερίνα</h2>
+    <p class="note">Στην κοινοποίηση της ανάρτησης της Ευαγγελίας από την Κατερίνα (90 αντιδράσεις, 23 σχόλια):</p>
+    <details class="comments">
+      <summary>Σχόλια (23)</summary>
+      <ul>
+        <li><b>Eleni Petridou</b>Βάλσαμο στον πόνο όλων μας.</li>
+        <li><b>Margarita Kolyda</b>Τα θερμά μου συλλυπητήρια.</li>
+        <li><b>Giwrgos Xalavatzis</b>Τα θερμά μου συλλυπητήρια, να είστε καλά να τον θυμάστε.</li>
+        <li><b>Faethon Gryparis</b>Θερμά συλλυπητήρια! Μας συγκλόνισε όλους το απρόσμενο.</li>
+        <li><b>Σίντι Σίντι</b>Τα θερμά μου συλλυπητήρια Κατερίνα μου!</li>
+        <li><b>Maria Triantafillidou</b>Κοριτσάκια μου, Κατερίνα μου, απευθύνομαι περισσότερο σε σένα γιατί σε γνώρισα και σε έζησα περισσότερο μέσω της κόρης μου, και σε εκτίμησα τόσο πολύ και σε αγάπησα εξίσου, και σίγουρα ο χαρακτήρας σου και η καλοσύνη σου οφείλεται σε όλα αυτά που πήρατε απλόχερα απ’ τους γονείς. Εύχομαι ολόψυχα και στις δύο σας και στη μαμά σας να σας δίνει δύναμη ο Θεός και κουράγιο, να περάσει γρήγορα ο χρόνος και η πληγή που αιμορραγεί τώρα να μείνει ένα σημάδι στην ψυχή, τόσο ώστε να μπορείτε να μιλάτε για τον μπαμπά σας χωρίς να κλαίτε και να θυμάστε όλες τις ευτυχισμένες στιγμές μαζί του… Καλό παράδεισο να έχει…</li>
+        <li><b>Aggeliki Gianniou</b>Συλλυπητήρια!! Καλό παράδεισο να έχει ο πατερούλης σου!! Να είσαι καλά να τον θυμάσαι!! Το φως της ψυχής του θα σε φωτίζει πάντα, αστέρι μου!</li>
+        <li><b>Θεοδώρα Πίππου</b>Συλλυπητήρια κοριτσάκι μου, να είστε καλά να τον θυμάστε.</li>
+        <li><b>Tina Mavromara</b>Μας συγκίνησες βαθιά Βαγγελίτσα μου με τα λόγια αγάπης που ζωγράφιζαν την αληθινή φιγούρα του αγαπημένου μας Αριστείδη. Η δύναμη και η αγάπη του να σας συνοδεύει πάντα. Καλή δύναμη και σε εσάς και στη μαμά. Αντίο αδερφικέ μου φίλε, διαμάντι της παρέας και της νιότης μας, που μοιραστήκαμε μαζί λύπες, αγωνίες, γλέντια και χαρές… Καλό σου ταξίδι..</li>
+        <li><b>Aristides Papadomichelakis</b>Τα ειλικρινή μου συλλυπητήρια, να είστε πάντα καλά να τον θυμάστε.</li>
+        <li><b>Polina Xanthaki</b>Θερμά συλλυπητήρια κορίτσι μου!</li>
+        <li><b>Αγγελική Μαϊδιώτου</b>Θερμά συλλυπητήρια κορίτσι μου!</li>
+        <li><b>Γεω Δέσποινα Νικολαΐδου</b>Θερμά συλλυπητήρια.</li>
+        <li><b>Nikos Varsamidakis</b>Θα ζει αιώνια στη μνήμη όσων τον γνώρισαν από κοντά ή από μακριά και τον αγάπησαν και τον εκτίμησαν. Συλλυπητήρια.</li>
+        <li><b>Areti Tsagari-Katsageorgi</b>Κατερινάκι μου γλυκό!!!!!</li>
+        <li><b>Μαρία Αμοιραλή</b>Τα ειλικρινή μου συλλυπητήρια για τον αγαπημένο σας πατέρα!! Εύχομαι η ευχή του να σας συνοδεύει σε όλη τη ζωή σας!! Αυτός ήταν ο Αριστείδης... όπως πολύ παραστατικά περιέγραψες, Ευαγγελία. Βρίσκεται τώρα στην αγκαλιά του δημιουργού μας κι από εκεί θα συνεχίσει να σας προστατεύει... Μια μεγάλη αγκαλιά στη μαμά, στην Κατερίνα και σε σένα!! Ο αγαπημένος μου συμμαθητής θα ζει στην καρδιά μας για πάντα!! Καλό σου ταξίδι Αριστείδη.</li>
+        <li><b>Eleni Manousou</b>Τα θερμά μου συλλυπητήρια!!!</li>
+        <li><b>Mairi Vlachou</b>Τα θερμά μου συλλυπητήρια Κατερίνα, να τον θυμάστε πάντα με αγάπη.</li>
+        <li><b>Ειρήνη Δαλεζίου</b>Θερμά συλλυπητήρια.</li>
+        <li><b>Aspasia Alexandri</b>Συλλυπητήρια. Καλό παράδεισο να έχει!</li>
+        <li><b>Elena Hasanllari</b>Θερμά συλλυπητήρια Κατερίνα μου.</li>
+        <li><b>Eftixios Gad</b>ΘΕΡΜΑ ΣΥΛΛΥΠΗΤΗΡΙΑ.</li>
+        <li><b>Vaso Theocharopoulou</b>Θερμά συλλυπητήρια Κατερίνα μου. Κουράγιο και δύναμη.</li>
+      </ul>
+    </details>
+    <p class="note">Στις υπόλοιπες κοινοποιήσεις της: <b>Eleni Manousou</b> (αγγελία Tinos LIVE TV): «Συλλυπητήρια Κατερίνα!!» · <b>Genovefa Sigizi</b> (Αδελφότητα, μέσω Tinos Today): «Συλλυπητήρια, κουράγιο.» · <b>Stella Asimakopoulou</b> (βίντεο Tinos LIVE TV): «Συλλυπητήρια.» · <b>Χριστίνα Παππά</b> έγραψε στο προφίλ της: «Συλλυπητήρια!!!»</p>
+  </article>
+
+  <section class="closing">
+    <figure class="photo"><img src="photos/closing.jpg" alt="Ο οικογενειακός τάφος των Κοντογεώργη στην Τήνο, σκεπασμένος με λουλούδια μετά την κηδεία" loading="lazy"><figcaption>Ο οικογενειακός τάφος στην Τήνο, μετά την εξόδιο ακολουθία της 24ης Οκτωβρίου 2026.</figcaption></figure>
+    <p class="farewell">Καλό ταξίδι, Αριστείδη.</p>
+  </section>
+
+  <footer class="src">
+    <p>Τα κείμενα, οι φωτογραφίες και τα σχόλια συγκεντρώθηκαν από το Facebook στις 24 και 25 Οκτωβρίου 2026, από τα προφίλ της Κατερίνας και της Ευαγγελίας Κοντογεώργη και από τις αναρτήσεις των Tinos LIVE TV, Tinos Today, Δήμου Τήνου, Ιδρύματος Τηνιακού Πολιτισμού, Μπάμπη Κουλούρα, Θέμη Ροδαμίτη, Ανδρέα Καφετζή, Παντελή Αρμάου, Χρήστου Πιπίνη, Tawfik Youssef και Νατάσας Δεληγιάννη Άσπρου, καθώς και από τα άρθρα των tinoslive.tv, tinostoday.gr, itip.gr και imaginistes.org. Ελαφρές ορθογραφικές διορθώσεις έγιναν στα σχόλια. Οι αριθμοί αντιδράσεων είναι της 25ης Οκτωβρίου.</p>
+    <p>Οι φωτογραφίες ανήκουν σε όσους τις ανάρτησαν· εδώ συγκεντρώνονται μόνο για την οικογένεια. Τα βίντεο ανοίγουν στο YouTube.</p>
+  </footer>
+</div>
+
+</body>
+</html>
